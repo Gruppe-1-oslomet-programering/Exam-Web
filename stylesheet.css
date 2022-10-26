@@ -26,6 +26,7 @@
     width:190px;
 }
 
+
 .text{
     font-size:large;
     padding-left:180px;
@@ -73,4 +74,36 @@
     text-align:left;
     margin-left:100px;
     color:#10161c;
+}
+
+
+
+.topnav1 {
+    position:fixed;
+    width:100vw;
+    height:auto;
+    top:0;
+    left:0;
+    z-index: 10;
+    background-color: black; 
+}
+
+.topnav1 a{
+    float:left;
+    display:block;
+    text-align:center;
+    padding-right: 30px;
+    text-decoration: none;
+    font-family:'Garamond',Tahoma,serif;
+    color:white;
+}
+
+.topnav1 a:hover{
+    color: #9FDBFF;
+}
+
+.topnav1 img{
+    padding:4%;
+    float: inline-start;
+    width:190px;
 }
