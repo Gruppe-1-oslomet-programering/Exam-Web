@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,23 @@
     <title>Document</title>
     <link rel="Stylesheet" href="stylesheet.css">
 </head>
+
 <body>
     <div class="topnav1">
         <a href="index.html"><img src="Images/HHLogoBlack.png" abbr title="Home"></a>
         <div class="text">
-            
-        <a href="booking.html">Book Now</a>
-        <a href="cafe.html">Dining</a>
-        <a href="accessibility.html">Accessibility</a>
-        <a href="topical.html">Opinion</a>
-        </div></div>
+            <a href="booking.html">Book Now</a>
+            <a href="cafe.html">Dining</a>
+            <a href="accessibility.html">Accessibility</a>
+            <a href="topical.html">Opinion</a>
+        </div>
+    </div>
 
-        <div class="gallery-container">
-            
-            <div class="promoGallery fade">
-                <img src="Images/Promo/Alesund.jpg">
-            </div>
+    <div class="gallery-container">
+
+        <div class="promoGallery fade">
+            <img src="Images/Promo/Alesund.jpg">
+        </div>
 
         <div class="promoGallery fade">
             <img src="Images/Promo/Fjord1.jpg">
@@ -45,29 +47,34 @@
             <h1>Your Stay at Himmingbjorg House</h1>
             <h2>Heaven Bespoke</h2>
 
+            <p>Our luxury venue here in Alesund is perfect for events, concerts, weddings or just <i>that</i> getaway to
+                paradise. We boast a wide range of facilities, including our 5 star rated restaurant which offers a
+                seasonal menu. Whatever you're looking for, you'll find it here. We can't wait to welcome you!</p>
+        </div>
+    </div>
+    <!--Malin: Nadia, the is one div closing tag missing. I add it over here
+        but maybe it has to be moved to after script?-->
 
-    <p>Our luxury venue here in Alesund is perfect for events, concerts, weddings or just <i>that</i> getaway to paradise. We boast a wide range of facilities, including our 5 star rated restaurant which offers a seasonal menu. Whatever you're looking for, you'll find it here. We can't wait to welcome you!</p> 
- </div>
+    <script>
+        let SlideIndex = 0;
+        showSlides();
 
-<script>
-    let SlideIndex= 0;
-    showSlides();
+        function showSlides() {
+            let i = 0
+            let slides = document.getElementsByClassName("promoGallery");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            SlideIndex++;
+            if (SlideIndex > slides.length) { SlideIndex = 1 }
+            slides[SlideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
 
-    function showSlides(){
-        let i=0
-        let slides= document.getElementsByClassName("promoGallery");
-        for (i=0;i<slides.length;i++){
-            slides[i].style.display="none";
         }
-        SlideIndex++;
-        if (SlideIndex > slides.length) {SlideIndex = 1}
-        slides[SlideIndex-1].style.display= "block";
-        setTimeout(showSlides, 4000);
-
-    }
-</script>
+    </script>
 
 
 
 </body>
+
 </html>
