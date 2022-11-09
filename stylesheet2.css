@@ -30,7 +30,7 @@ p{
     height: 40vw;
     /*Licence free image from Pixabay, credit user_id:4701261.
     https://pixabay.com/no/illustrations/nordstjernen-stjerner-natt-2869817/ */
-    background-image: url(/Images/north-star-2869817_1280.jpg);
+    background-image: url(Images/north-star-2869817_1280.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
     
