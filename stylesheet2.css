@@ -1,48 +1,145 @@
 body{
-   
+     /*background-image: linear-gradient(#000000, #9bd2ff);*/
+
+}
+
+h1{
+ 
 }
 
 p{
+    
+}
+
+#header {
+    
+    position: sticky;
+    display: flex;
+    
+    width: 100vw;
+    height: 10vw;
+    margin-bottom: 10%;
+    
+    background-color: red;
 
 }
 
+#header img{
+    justify-self: left;
+    height: 10vw;
+    width: auto;    
+    background-color: black;
+}
+
+/*
+li a{
+    list-style-type: none;
+    display: inline;
+    flex-flow: row wrap;
+    padding: 5%;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: pink;
+    text-decoration: none;
+    color: white;
+    font-family: 'Garamond', Tahoma, serif;
+    font-size: 28px;
+    
+    
+}
+*/
+
 .nav{
+    
+}
+
+#header ul{
+    background-color: pink;
+
+}
+
+#header li{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    /*flex-flow: row wrap;*/
+    background-color: blue;
+    
+    
+}
+
+#header a{
+    
+    /*background-color: pink;*/
+}
+
+
+{
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*
+.header{
     display: flex;
     flex-flow: row nowrap;
-
-    width: 100%;   
+    position: sticky;
+    top: 0;
+    width: 100vw;   
     align-items: center;
     justify-content: space-around;
 
-    background-color: black;
-    font-size: 30px;
+    height: 10vw;
+    margin: 10px;
+    padding: 10px;
+
+    background-image: linear-gradient( #33628b, #000000);
+
     font-family: 'Garamond', Tahoma, serif;
-
     
+    /*How do I stretch the menu to the left end of the page?*/
+}
+/*
+.header img {
+    align-self: flex-start;
+    /*background-color: black;*/
+    /*height: 10vw;
+    width: auto; 
+    vertical-align: middle;
 }
 
-a.nav:link{
-    color: white;
+
+.header a, .header a:visited{
+    text-align: justify;
+    align-items: row;
+    color:white;
     text-decoration: none;
-    padding: 1%;
-}
-
-a.nav:visited{
+    display: flex;
     position: relative;
-    color: white;
-    text-decoration: none;
-    
+    font-size: 22px;    
 }
 
-a.nav:hover {
+.header a:hover{
     color: #9FDBFF;
+    text-decoration: none;
+    background-image:linear-gradient(#33628b, #000000);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 50%;  
 }
 
-.nav img {
-    background-color: black;
-    width: auto;
-    height: 120px;
-    
-}
+li{
 
+    text-align: justify;
+    align-items: row;
+    color:white;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    font-size: 22px;   
+}*/
 
