@@ -68,11 +68,14 @@ p{
     */
 }
 
+
+/*The font size needs a better solution!
+it has to be a bit bigger, but still fit inside the menu*/
 #header li{
     list-style-type: none;
     width: 100%;
     /*background-color: blue;*/
-    font-size: 3.5vw; 
+    font-size: 3vw; 
     align-self: center;  
     display: flex;
     flex-flow: row, nowrap;
