@@ -16,13 +16,17 @@ p{
 }
 
 #nav{
-      
+      background-color: yellowgreen;
     
 }
 
 #nav img{
     width: 100vw;
     background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    align-self: baseline;
+
 }
 
 
@@ -62,11 +66,13 @@ p{
     list-style-type: none;
     width: 100%;
     /*background-color: blue;*/
-    font-size: 3vw; 
+    font-size: 3.5vw; 
     align-self: center;  
     display: flex;
     flex-flow: row, nowrap;
     justify-content: space-evenly;
+    white-space: nowrap;
+    
         
 }
 
@@ -79,7 +85,11 @@ p{
 }
 
 #header a:hover{
+    background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-size:cover;
+    background-repeat: no-repeat;
     color: #9FDBFF
+    
 }
 
 
