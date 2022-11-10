@@ -7,14 +7,42 @@ body{
     background-color: white;
     padding: 0;
     margin: 0;
+    font-family: 
 
 }
+
+/*Should the text cover the whole page?
+Maybe a sidebar (it will fuck things up)
+in there there can be the three links from the page.
+Not deleting the links from the paragrapgh,
+but ther ecould ba a sidebar to make it superclear and
+easier to navigate
+
+It definatly needs some padding or and margin
+*/
+
+
 
 h1, h2, h3{
- 
+    background-color: grey;
+ /*bold, but no other decoration*/
 }
 
+h4{
+    background-color: greenyellow;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 18px;
+    /*font size same as h3 default size*/
+
+}
+
+/*I think the p tag could be styled with bigger font-size,
+and the headers probably needs to be adjusted then too
+Or i need to make a phone call to a optician*/
 p{
+    
+    background-color: pink;
     
 }
 
