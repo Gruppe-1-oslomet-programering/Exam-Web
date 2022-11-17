@@ -2,6 +2,8 @@
 body{
     padding: 0;
     margin: 0;
+
+    /*font-family: ;*/
 }
 
 
@@ -38,7 +40,11 @@ body{
 }
 
 .grid-page{
-    grid-template-rows: repeat(4, 1fr);
+
+    /*Here we can probably add another solution
+    for sizing the rows. probably header dont need the 
+    same size as all the other parts*/
+    grid-template-rows:  repeat(4, 2fr);
     grid-template-columns: 1fr;
     /*If we add more columns, use this instead:
     grid-template-columns: repeat(3, 1fr);
@@ -62,7 +68,13 @@ align-items:;
 */
 
 .topnav{
+
     grid-area: t;
+
+    background-color: pink;
+
+    padding-right: 10px;
+    padding-left: 0;
 }
 
 .topnav-links{
@@ -70,22 +82,49 @@ align-items:;
 } 
 
 .topnav ul{
+
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: space-between;
+    align-items: center;
+
     list-style-type: none;
+
+    padding-left: 0;
 }
 
-.topnav a{
-    /*dont know if this reaches the element, or if it has to be named
-    li a{ for exapmple*/
+.topnav a, .topnav a:visited{
+    
+    color: white;
+    text-decoration: none;
+    font-family: 'Garamond', Tahoma, serif;
+        
 }
+
+.topnav a:hover{
+
+    color: #9FDBFF;
+}
+
+
 
 .topnav img{
+   
+    height: 80px;
+    width: auto;
+    background-color: blue;
 
+    /*dunno how to place the pic in the center of header,
+    or is it some padding that has to change..
+    or maybe it just needs a smarter sizing
+    */
 }
 
-
-
 .background{
+
     grid-area: b;
+   
+    
 }
 
 .slogan{
@@ -97,6 +136,7 @@ align-items:;
 }
 
 .intro{
+
     grid-area: i;
 }
 
@@ -113,6 +153,7 @@ align-items:;
 }
 
 footer {
+
     grid-area: f;
 }
 
