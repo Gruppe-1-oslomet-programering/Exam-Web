@@ -65,6 +65,10 @@ align-items:;
     grid-area: t;
 }
 
+.topnav-links{
+    
+} 
+
 .topnav ul{
     list-style-type: none;
 }
@@ -77,6 +81,8 @@ align-items:;
 .topnav img{
 
 }
+
+
 
 .background{
     grid-area: b;
@@ -100,7 +106,7 @@ align-items:;
 
 .intro img{
 
-    
+
 }
 .intro p{
 
