@@ -1,0 +1,85 @@
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*class parent for the whole page*/
+.grid{
+    display: grid;
+    width: 100vw;
+
+    /*adding size to columns, example px, %, fr.
+     guess we dont need it
+    since it is in grid-page
+    grid-template-columns: ;
+
+    */
+
+
+    /*It doesnt make sense to me right now to add extra ccolums,
+    do we need colums for big screen page?
+    maybe we can add a sidebar with some extra info about the page,
+    for example list up all the things the venue can be used for*/
+    
+    grid-template-areas: 
+    "t"
+    "b"
+    "i"
+    "f"
+    /*can add extra columns here for example "f f f" etc*/
+    ;
+    /*could divide the footer in one part adress and a smaller part with 
+    fireplace picture like "f f p"*/
+    
+    
+    
+}
+
+.grid-page{
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    /*If we add more columns, use this instead:
+    grid-template-columns: repeat(3, 1fr);
+    */
+
+    /*add spacing between colums and rows:
+
+    grid-row-gap: ;
+    grid-colum-gap: ;
+
+*/
+}
+
+/*
+start, end center, strech....
+for horisontal adjustment between items inside the grid:
+justify-items: ;
+
+vertically:
+align-items:;
+*/
+
+.topnav{
+    grid-area: t;
+}
+
+.topnav ul{
+    list-style-type: none;
+}
+
+.background{
+    grid-area: b;
+}
+
+.intro{
+    grid-area: i;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+
