@@ -69,12 +69,41 @@ align-items:;
     list-style-type: none;
 }
 
+.topnav a{
+    /*dont know if this reaches the element, or if it has to be named
+    li a{ for exapmple*/
+}
+
+.topnav img{
+
+}
+
 .background{
     grid-area: b;
 }
 
+.slogan{
+    /*inside backgorund class*/
+}
+
+.background img{
+
+}
+
 .intro{
     grid-area: i;
+}
+
+.intro h1{
+
+}
+
+.intro img{
+
+    
+}
+.intro p{
+
 }
 
 footer {
