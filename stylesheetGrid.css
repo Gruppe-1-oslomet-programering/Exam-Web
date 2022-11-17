@@ -2,6 +2,7 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: black;
 
     /*font-family: ;*/
 }
@@ -28,6 +29,7 @@ body{
     grid-template-areas: 
     "t"
     "b"
+    "b"
     "i"
     "f"
     /*can add extra columns here for example "f f f" etc*/
@@ -44,7 +46,7 @@ body{
     /*Here we can probably add another solution
     for sizing the rows. probably header dont need the 
     same size as all the other parts*/
-    grid-template-rows:  repeat(4, 2fr);
+    grid-template-rows:  repeat(5, 2fr);
     grid-template-columns: 1fr;
     /*If we add more columns, use this instead:
     grid-template-columns: repeat(3, 1fr);
@@ -71,34 +73,44 @@ align-items:;
 
     grid-area: t;
 
-    background-color: pink;
-
+    background-color: black;
     padding-right: 10px;
     padding-left: 0;
+    background-color: black;
+
+    bo
+
+    
+   
 }
 
 .topnav-links{
-    
+    font-size: 25px;
 } 
 
 .topnav ul{
+    
+    /*right now it looks ok for small screen,
+    needs a better solution too look good
+    in a big screen too*/
 
+    padding-left: 0;
     display: flex;
     flex-flow: row, nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    justify-items: flex-start;
     align-items: center;
 
     list-style-type: none;
 
-    padding-left: 0;
+    
 }
 
 .topnav a, .topnav a:visited{
     
     color: white;
     text-decoration: none;
-    font-family: 'Garamond', Tahoma, serif;
-        
+    font-family: 'Garamond', Tahoma, serif;    
 }
 
 .topnav a:hover{
@@ -109,52 +121,124 @@ align-items:;
 
 
 .topnav img{
-   
+    
     height: 80px;
     width: auto;
-    background-color: blue;
-
-    /*dunno how to place the pic in the center of header,
-    or is it some padding that has to change..
-    or maybe it just needs a smarter sizing
-    */
-}
-
-.background{
-
-    grid-area: b;
-   
     
 }
 
+
+/*background img and a needs to be positioned*/
+.background{
+
+    grid-area: b;
+
+    height: 800px;
+    background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: black;
+    
+}
+
+/*background for phone
+the position of slogan and link needs to be fixed
+.background{
+
+    grid-area: b;
+
+    background-image: url(/Images/NorthStar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: 100%;
+    padding: 100px;
+    
+    
+}
+*/
+
 .slogan{
-    /*inside backgorund class*/
+    /*slogan img inside the backgorund class
+    guess class is not needed since .background img is the same
+    but beware, if img is styled and div class deleted, 
+    you never know whats gonna happen
+    */
 }
 
 .background img{
+    /*this is the slogan img*/
+    width: 400px;
+    height: auto;
 
+}
+
+.background a, .background a:visited{
+    text-decoration: none;
+    background-color: yellow;
+}
+
+.background a:hover{
+    color: burlywood;
 }
 
 .intro{
 
     grid-area: i;
+
+    background-image: linear-gradient(#000000, #2D3F4E);
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: larger;
+    padding: 50px;
+    
+    /*used styling from first stylesheet to copy the look*/
 }
 
 .intro h1{
-
+    color: antiquewhite;
 }
 
 .intro img{
+    width: 250px;
 
-
+    
 }
 .intro p{
-
+    color: wheat;
 }
 
-footer {
+.footer {
+
+    /*absoluutely change colours*/
 
     grid-area: f;
+
+    padding;
+    width: 100%;
+    background-color: grey;
+    
+   
+
+    /*fireplace pic in the footer:
+
+    background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    
+*/
+    padding: 4px;
+    
+}
+
+.footer p{
+    padding-left: 10px;
+    color:aquamarine;
+}
+.footer a{
+    color: white;
 }
 
 
