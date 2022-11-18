@@ -1,0 +1,245 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+    /*font-family: ;*/
+}
+
+
+/*class parent for the whole page*/
+.grid{
+    display: grid;
+    width: 100vw;
+
+    /*adding size to columns, example px, %, fr.
+     guess we dont need it
+    since it is in grid-page
+    grid-template-columns: ;
+
+    */
+
+
+    /*It doesnt make sense to me right now to add extra ccolums,
+    do we need colums for big screen page?
+    maybe we can add a sidebar with some extra info about the page,
+    for example list up all the things the venue can be used for*/
+    
+    grid-template-areas: 
+    "t"
+    "b"
+    "b"
+    "i"
+    "f"
+    /*can add extra columns here for example "f f f" etc*/
+    ;
+    /*could divide the footer in one part adress and a smaller part with 
+    fireplace picture like "f f p"*/
+    
+    
+    
+}
+
+.grid-page{
+
+    /*Here we can probably add another solution
+    for sizing the rows. probably header dont need the 
+    same size as all the other parts*/
+    grid-template-rows:  repeat(5, 2fr);
+    grid-template-columns: 1fr;
+    /*If we add more columns, use this instead:
+    grid-template-columns: repeat(3, 1fr);
+    */
+
+    /*add spacing between colums and rows:
+
+    grid-row-gap: ;
+    grid-colum-gap: ;
+
+*/
+}
+
+/*
+start, end center, strech....
+for horisontal adjustment between items inside the grid:
+justify-items: ;
+
+vertically:
+align-items:;
+*/
+
+.topnav{
+
+    grid-area: t;
+
+    background-color: black;
+    padding-right: 10px;
+    padding-left: 0;
+    background-color: black;
+
+    bo
+
+    
+   
+}
+
+.topnav-links{
+    font-size: 25px;
+} 
+
+.topnav ul{
+    
+    /*right now it looks ok for small screen,
+    needs a better solution too look good
+    in a big screen too*/
+
+    padding-left: 0;
+    display: flex;
+    flex-flow: row, nowrap;
+    justify-content: space-evenly;
+    justify-items: flex-start;
+    align-items: center;
+
+    list-style-type: none;
+
+    
+}
+
+.topnav a, .topnav a:visited{
+    
+    color: white;
+    text-decoration: none;
+    font-family: 'Garamond', Tahoma, serif;    
+}
+
+.topnav a:hover{
+
+    color: #9FDBFF;
+}
+
+
+
+.topnav img{
+    
+    height: 80px;
+    width: auto;
+    
+}
+
+
+/*background img and a needs to be positioned*/
+.background{
+
+    grid-area: b;
+
+    height: 800px;
+    background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: black;
+    
+}
+
+/*background for phone
+the position of slogan and link needs to be fixed
+.background{
+
+    grid-area: b;
+
+    background-image: url(/Images/NorthStar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: 100%;
+    padding: 100px;
+    
+    
+}
+*/
+
+.slogan{
+    /*slogan img inside the backgorund class
+    guess class is not needed since .background img is the same
+    but beware, if img is styled and div class deleted, 
+    you never know whats gonna happen
+    */
+}
+
+.background img{
+    /*this is the slogan img*/
+    width: 400px;
+    height: auto;
+
+}
+
+.background a, .background a:visited{
+    text-decoration: none;
+    background-color: yellow;
+}
+
+.background a:hover{
+    color: burlywood;
+}
+
+.intro{
+
+    grid-area: i;
+
+    background-image: linear-gradient(#000000, #2D3F4E);
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: larger;
+    padding: 50px;
+    
+    /*used styling from first stylesheet to copy the look*/
+}
+
+.intro h1{
+    color: antiquewhite;
+}
+
+.intro img{
+    width: 250px;
+
+    
+}
+.intro p{
+    color: wheat;
+}
+
+.footer {
+
+    /*absoluutely change colours*/
+
+    grid-area: f;
+
+    padding;
+    width: 100%;
+    background-color: grey;
+    
+   
+
+    /*fireplace pic in the footer:
+
+    background-image: url(/Images/ezgif.com-gif-maker.gif);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    
+*/
+    padding: 4px;
+    
+}
+
+.footer p{
+    padding-left: 10px;
+    color:aquamarine;
+}
+.footer a{
+    color: white;
+}
+
+
+
