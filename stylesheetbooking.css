@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*Navigation Bar*/
+.topnav1 {
+    display:flex;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+.topnav1 a {
+    float: left;
+    padding-right: 40px;
+    text-decoration: none;
+    font-family: 'Garamond', Tahoma, serif;
+    font-size: 130%;
+    color: white;
+}
+
+.topnav1 a:hover {
+    color: #9FDBFF;
+}
+
+.topnav1 img {
+    padding: 4%;
+    float: inline-start;
+    width: 190px;
+}
+
+/*Slideshow Gallery*/
+.promoGallery {
+    display: none;
+}
+
+.gallery-container {
+    max-width: 100%;
+    height: 600px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*Grid Layout for Booking Page*/
+.welcome {
+    grid-area: content;
+    text-align: center;
+    place-self: stretch stretch;
+    background-image: linear-gradient(#000000, #2D3F4E);
+    color:white;
+    padding:20%;
+}
+
+.welcome a{
+    text-decoration:none;
+    color:#9FDBFF;
+}
+
+.welcome-image {
+    grid-area: image;
+    place-self: stretch stretch;
+    background-image: url("Images/Promo/HotelRoom1.jpg");
+    background-size: cover;
+}
+
+
+.location {
+    grid-area:content1;
+    place-self: stretch stretch;
+    text-align: center;
+    background-image: linear-gradient(#000000, #2D3F4E);
+    color:white;
+    padding:20%;
+}
+
+.location  ul {
+    text-align:left;
+}
+
+.location-image {
+    grid-area: image1;
+    place-self: stretch stretch;
+    background-image: url("Images/Promo/Alesund.jpg");
+    background-size:cover;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color:white;
+    padding:10%;
+}
+
+.footer1 {
+    grid-area: footer1;
+    background-color: #000000;
+    text-align:center;
+    color:white;
+    padding:10%;
+    font-size: x-small;
+}
+
+.footer1 a{
+    color: #9FDBFF;
+}
+
+.footer1 li{
+    list-style-type: none;
+}
+
+
+.booking {
+    grid-area: booking;
+    place-self: stretch stretch;
+    text-align: center;
+    font-size: 4vmin;
+    color:white;
+    border: 5px solid #9FDBFF;
+    background-color: #2D3F4E;
+    padding:10%;
+
+}
+
+.booking a{
+    color: #9FDBFF;
+}
+
+
+
+.bookingcontent {
+    display:grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template:
+    [row1-start] "... ... ... ..." 3% [row1-end]
+    [row2-start] "... content image ..."  [row2-end]
+    [row3-start] "... image1 content1 ..." [row3-end]
+    [row4-start] "... booking booking ..." [row4-end]
+    [row5-start] "footer footer footer1 footer1" 10%[row5-end]
+    / 5% 40% 50% 5%;
+    gap: 40px 0px;
+}
+
+
+/*Grid Layout for Cafe Page*/
+
+.cafecontent {
+    display:grid;
+    
+}
+
+
+
+
+
+
+
+
+/*Media Query for Phone*/
+@media screen and (max-width: 600px){
+
+    /*BookingPage*/
+    .location-image{
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+
+    .footer1{
+        display:none;
+    }
+    .bookingcontent{
+        grid-template:
+        "... ... ..."
+        "... content ..."
+        "... image ..." 500px
+        "... content1 ..."
+        "... image1 ..." 250px
+        "... booking ..."
+        "footer footer footer"
+    }
+}

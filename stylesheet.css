@@ -6,22 +6,26 @@
 .topnav {
     position: fixed;
     width: 100%;
-    height: auto;
     top: 0;
-    z-index: 10;
-    justify-content: flex-start;
-    
+    z-index: 10; 
 }
 
+.topnav ul{
+    display: flex;
+    flex-flow: row, wrap;
+    width:100vw;
+    height:fit-content;
+    font-size: 3vw;
+    align-items: center;
+    list-style-type: none;
+    text-shadow: 5px 2px #27516b95;
+}
+
+
 .topnav a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding-right: 80px;
     text-decoration: none;
     font-family: 'Garamond', Tahoma, serif;
     color: white;
-    font-size: larger;
 }
 
 .topnav a:hover {
@@ -29,48 +33,39 @@
 }
 
 .topnav img {
-    padding-right: 30px;
-    float: inline-start;
     width: 250px;
 }
 
-.text {
-    font-size: large;
-    padding-left: 250px;
-    position: absolute;
-    bottom: 30%;
-    text-shadow: 5px 2px #27516b95;
-}
 
-.fireplace {
-    width: 100%;
+.background1 {
+    display:flex;
     height: 800px;
     background-image: url("Images/ezgif.com-gif-maker\ \(1\).gif");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content:center;
+
 }
 
-.fireplace a {
+.background1 a {
+    flex: none;
     border: 5px solid #9FDBFF;
     background-color: #2D3F4E;
     text-decoration: none;
+    text-align: center;
     font-family: 'Garamond', Tahoma, serif;
     color: white;
     padding: 10px;
     z-index: 1;
-    position: absolute;
-    top: 450px;
-    left: 250px;
-
-
+    
 }
 
-.slogan img {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    width: 50%;
+.background1 img {
+    width: 60%;
+    position:relative;
     z-index: 1;
 }
 
@@ -106,64 +101,3 @@
 }
 
 
-
-.topnav1 {
-    position: fixed;
-    width: 100vw;
-    height: auto;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: black;
-}
-
-.topnav1 a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding-right: 30px;
-    text-decoration: none;
-    font-family: 'Garamond', Tahoma, serif;
-    color: white;
-}
-
-.topnav1 a:hover {
-    color: #9FDBFF;
-}
-
-.topnav1 img {
-    padding: 4%;
-    float: inline-start;
-    width: 190px;
-}
-
-.promoGallery {
-    display: none;
-}
-
-.gallery-container {
-    max-width: 100%;
-    height: 600px;
-}
-
-.gallery-container img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .6
-    }
-
-    to {
-        opacity: 1
-    }
-}
