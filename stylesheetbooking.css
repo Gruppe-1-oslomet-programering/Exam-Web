@@ -185,19 +185,17 @@
 .welcomecafe {
     grid-area:cafewelcome;
     padding:20%;
-    
-    color:white;
     text-align: center;
-    place-self:stretch stretch;
-
-}
-
-.welcome-imagecafe{
-    grid-area:cafeimage;
-    place-self:stretch stretch;
+    font-size: 6vmin;
+    color:#c0e7ff;
+    text-shadow:2px 2px #2D3F4E;
+    place-self:center stretch;
     background-image: url("Images/CafePromo/Restaurant.jpg");
     background-size: cover;
+    border: 4px solid #2D3F4E;
+
 }
+
 
 /*I thought this was cool:
 like the color for the menus, but wanted to be coherent..
@@ -222,11 +220,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 }
 
 
-
-.breakfast {
-    grid-area:breakfast;
-    place-self: stretch stretch;
-    background-image: url("Images/CafePromo/Breakfast.jpg");
+.bubble {
     background-size: cover;
     z-index: 1;
     border: 4px solid white;
@@ -234,39 +228,31 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     text-align: center;
     place-self:start center;
     padding:40%
+
 }
 
-.breakfast h1{
-    font-size: 5vw;
+.bubble h1{
+    font-size: 9vmin;
     color:white;
     text-shadow:2px 2px #000000;
 }
 
+.breakfast {
+    grid-area:breakfast;
+    background-image: url("Images/CafePromo/Breakfast.jpg");   
+}
+
 
 .breakfastmenu {
-    grid-area:bmenu;
-    
+    grid-area:bmenu;   
 }
 
 
 .lunch {
     grid-area:lunch;
-    place-self: stretch stretch;
-    background-image: url("Images/CafePromo/Lunch.jpg");
-    background-size: cover;
-    z-index: 1;
-    border-radius: 20%;
-    text-align: center;
-    place-self:start center;
-    padding:40%
+    background-image: url("Images/CafePromo/Lunch.jpg");   
 }
 
-.lunch h1{
-    font-size: 5vw;
-    color:white;
-    text-shadow:2px 2px #000000;
-
-}
 
 .lunchmenu{
     grid-area:lmenu;
@@ -275,22 +261,9 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .dinner{
     grid-area:dinner;
-    place-self: stretch stretch;
     background-image: url("Images/CafePromo/Dinner.jpg");
-    background-size: cover;
-    z-index: 1;
-    border-radius: 20%;
-    text-align: center;
-    place-self:start center;
-    padding:40%
 }
 
-.dinner h1{
-    font-size: 5vw;
-    color:white;
-    text-shadow:2px 2px #000000;
-
-}
 
 .dinnermenu{
     grid-area:dmenu;
@@ -299,21 +272,9 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .dessert{
     grid-area:dessert;
-    place-self: stretch stretch;
     background-image: url("Images/CafePromo/Dessert.jpg");
-    background-size: cover;
-    z-index: 1;
-    border-radius: 20%;
-    text-align: center;
-    place-self:start center;
-    padding:40%
 }
 
-.dessert h1{
-    font-size: 5vw;
-    color:white;
-    text-shadow:2px 2px #000000;
-}
 
 .dessertmenu{
     grid-area:dsmenu;
@@ -340,13 +301,13 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     background-image: url("Images/CafePromo/Vegetabletop.jpg");
     grid-template:
     [row1-start] "... ... ... ..."[row1-end]
-    [row2-start] "... cafewelcome cafeimage cafeimage"400px [row2-end]
+    [row2-start] "cafewelcome cafewelcome cafewelcome cafewelcome"400px [row2-end]
     [row3-start] "breakfast bmenu bmenu bmenu" 500px [row3-end]
-    [row4-start] "lunch lmenu lmenu lmenu" 500px[row4-end]
+    [row4-start] "lmenu lmenu lmenu lunch" 500px[row4-end]
     [row5-start] "dinner dmenu dmenu dmenu" 500px[row5-end]
-    [row6-start] "dessert dsmenu dsmenu dsmenu"500px[row6-end]
+    [row6-start] "dsmenu dsmenu dsmenu dessert"500px[row6-end]
     [row7-start] "footer footer footer1 footer1" [row7-end]
-    /200px auto auto 300px;
+    /300px auto auto 300px;
 
 }
 
