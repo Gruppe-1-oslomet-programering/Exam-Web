@@ -1,89 +1,69 @@
-/*Its too much space between logo and Home button!*/
+/*
+TO DO:
+-add "back to top" link in every section
+-get rid of the white padding or what it is around the sections
+-style all text
+-style link in sections
+-style the section containers.
+-sort pictures and add other
+-make all pictures inherit isntead of repeating in every id
+-make a new section with footer and credits
+-in big screen its a bit too much pictue duration
+-add colors and styling to match the graphic profile
 
+why does the background pics ger margin in big screen
+
+need to change the whole class strucutres
+if the text sections should have margin
+on the sides...
+*/
 
 
 body{
     /*background-image: linear-gradient( #002fa7, black);*/
-    background-color: white;
     padding: 0;
     margin: 0;
-    font-family: 
-}
+    overflow-x: hidden;
+    background-color: black;
 
-/*Should the text cover the whole page?
-Maybe a sidebar (it will fuck things up)
-in there there can be the three links from the page.
-Not deleting the links from the paragrapgh,
-but ther ecould ba a sidebar to make it superclear and
-easier to navigate
-
-It definatly needs some padding or and margin
-
-and I would like to change so the scroller doesnt appear
-*/
-
-
-
-h1, h2, h3{
-    background-color: grey;
- /*bold, but no other decoration*/
-}
-
-h4{
-    background-color: greenyellow;
-    text-decoration: underline;
-    font-style: italic;
-    font-size: 18px;
-    /*font size same as h3 default size*/
-
-}
-
-/*I think the p tag could be styled with bigger font-size,
-and the headers probably needs to be adjusted then too
-Or i need to make a phone call to a optician*/
-p{
-    
-    background-color: pink;
-    
 }
 
 #header{
-      background-color: #002fa7;
+    /*should get rid of the line between header and navigation
+    so i can delete this color:
+    just need to find it first
+    could actually delete the whole paragraph here
+    when i find it*/
+      background-color: black;
       width: 100vw;
-      /*its a line between menu and top pic...
-       dunno... I just colored it same color as navigation*/
-       
-    
+          
 }
 
 #header img{
     width: 100vw;
     height: 40vw;
-    /*Is it called licence free? :) */
+
     /*Licence free image from Pixabay, credit user_id:4701261.
     https://pixabay.com/no/illustrations/nordstjernen-stjerner-natt-2869817/ */
     background-image: url("Images/NorthStar.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     
 }
 
 
 #navigation {
+    overflow-x: hidden;
     position: sticky;
     display: flex;
     width: 100vw;
-    height: 10vw;
-    background-image: linear-gradient(#002fa7, #000000);
+    height: 11vw;
+    background-color: black;
+    /*background-image: linear-gradient(#002fa7, #000000);*/
 
 }
 
 #navigation img{
-    
-    /*
-    dont know if this does anything:
-    justify-self: left;
-    */
     height: 10vw;
     width: auto; 
 }
@@ -92,19 +72,10 @@ p{
     width: 100%;
     display: flex;
     padding-left: 0;
+    padding-right: 20px;
 
-    /*Does this align self do anything?
-    And also the margin and padding?
-    align-self: left;
-    margin-left: 0;
-    padding-left: 0;
-    */
 }
 
-
-/*The font size needs a better solution!
-it has to be a bit bigger, but still fit inside the menu
-also in small screens*/
 #navigation li{
     list-style-type: none;
     width: 100%;
@@ -114,19 +85,153 @@ also in small screens*/
     flex-flow: row, nowrap;
     justify-content: space-evenly;
     white-space: nowrap;     
+
 }
 
 #navigation a, #navigation a:visited{
     color: white;
     text-decoration: none;
     font-family: 'Garamond', Tahoma, serif;
-    
         
 }
 
 #navigation a:hover{
     color: #9FDBFF;
- 
+
 }
 
+.main{
+    
+}
 
+.main section{
+    /* display: none; */
+
+    background-image: linear-gradient( #2D3F4E, black);
+}
+
+.main h1{
+    padding: 20px;
+    color: white;
+    
+}
+
+.main h2,.main h3{
+   color:white;
+   }
+
+
+
+.main h4{
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 18px;
+    
+}
+
+.main p{
+   color: white; 
+    
+}
+
+.main a, .main a:visited{
+    color: red;
+    text-decoration: none;
+}
+
+#picture{
+
+/*maybe change height to 100vw if sections get big*/
+
+    /*how can I make all the children arv dette:display:
+    
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    */
+
+}
+
+#picture-0{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/Promo/HotelRoom2.jpg);
+}
+    
+#picture-1{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/CafePromo/Restaurant.jpg);
+}
+
+#picture-1{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/Promo/HotelRoom2.jpg);
+}
+
+#picture-2{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/CafePromo/Dessert.jpg);
+}
+
+#picture-3{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/Promo/Fjord1.jpg);
+}
+
+#picture-4{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/Promo/HotelRoom1.jpg);
+}
+
+#picture-5{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/Promo/HotelView1.jpg);
+}
+
+#picture-6{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/CafePromo/Dinner.jpg)
+}
+
+#picture-7{
+    height: 50vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(/Images/CafePromo/Lunch.jpg)
+}
