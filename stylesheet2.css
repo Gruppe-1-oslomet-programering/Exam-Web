@@ -161,7 +161,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/Promo/HotelRoom2.jpg);
+    background-image: url("Images/Promo/HotelRoom2.jpg");
 }
     
 #picture-1{
@@ -170,7 +170,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/CafePromo/Restaurant.jpg);
+    background-image: url("Images/CafePromo/Restaurant.jpg");
 }
 
 #picture-1{
@@ -179,7 +179,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/Promo/HotelRoom2.jpg);
+    background-image: url("Images/Promo/HotelRoom2.jpg");
 }
 
 #picture-2{
@@ -188,7 +188,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/CafePromo/Dessert.jpg);
+    background-image: url("Images/CafePromo/Dessert.jpg");
 }
 
 #picture-3{
@@ -197,7 +197,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/Promo/Fjord1.jpg);
+    background-image: url("Images/Promo/Fjord1.jpg");
 }
 
 #picture-4{
@@ -206,7 +206,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/Promo/HotelRoom1.jpg);
+    background-image: url("Images/Promo/HotelRoom1.jpg");
 }
 
 #picture-5{
@@ -215,7 +215,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/Promo/HotelView1.jpg);
+    background-image: url("Images/Promo/HotelView1.jpg");
 }
 
 #picture-6{
@@ -224,7 +224,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/CafePromo/Dinner.jpg)
+    background-image: url("Images/CafePromo/Dinner.jpg")
 }
 
 #picture-7{
@@ -233,5 +233,5 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    background-image: url(Images/CafePromo/Lunch.jpg)
+    background-image: url("Images/CafePromo/Lunch.jpg")
 }
