@@ -346,4 +346,19 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
         "... booking ..."
         "footer footer footer"
     }
+
+    .cafecontent{
+        grid-template:
+        "... ... ..."
+        "cafewelcome cafewelcome cafewelcome"
+        "breakfast breakfast breakfast"
+        "bmenu bmenu bmenu"
+        "lunch lunch lunch"
+        "lmenu lmenu  lmenu"
+        "dinner dinner dinner"
+        "dmenu dmenu dmenu"
+        "dessert dessert dessert"
+        "dsmenu dsmenu dsmenu"
+        "footer footer footer"
+    }
 }
