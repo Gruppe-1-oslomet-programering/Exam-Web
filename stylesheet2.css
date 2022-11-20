@@ -19,37 +19,29 @@ on the sides...
 */
 
 
-body{
+body {
     /*background-image: linear-gradient( #002fa7, black);*/
     padding: 0;
     margin: 0;
     overflow-x: hidden;
     background-color: black;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
-#header{
-    /*should get rid of the line between header and navigation
-    so i can delete this color:
-    just need to find it first
-    could actually delete the whole paragraph here
-    when i find it*/
-      background-color: black;
-      width: 100vw;
-          
-}
-
-#header img{
+.slogan {
     width: 100vw;
     height: 40vw;
-
     /*Licence free image from Pixabay, credit user_id:4701261.
     https://pixabay.com/no/illustrations/nordstjernen-stjerner-natt-2869817/ */
     background-image: url("Images/NorthStar.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
+
+
+
 
 
 #navigation {
@@ -60,15 +52,15 @@ body{
     height: 11vw;
     background-color: black;
     /*background-image: linear-gradient(#002fa7, #000000);*/
-
+    
 }
 
-#navigation img{
+#navigation img {
     height: 10vw;
-    width: auto; 
+    width: auto;
 }
 
-#navigation ul{
+#navigation ul {
     width: 100%;
     display: flex;
     padding-left: 0;
@@ -76,162 +68,195 @@ body{
 
 }
 
-#navigation li{
+#navigation li {
     list-style-type: none;
     width: 100%;
-    font-size: 3vw; 
-    align-self: center;  
+    font-size: 3vw;
+    align-self: center;
     display: flex;
     flex-flow: row, nowrap;
     justify-content: space-evenly;
-    white-space: nowrap;     
+    white-space: nowrap;
 
 }
 
-#navigation a, #navigation a:visited{
+#navigation a,
+#navigation a:visited {
     color: white;
     text-decoration: none;
     font-family: 'Garamond', Tahoma, serif;
-        
+
 }
 
-#navigation a:hover{
+#navigation a:hover {
     color: #9FDBFF;
 
 }
 
-.main{
-    
+.main {}
+
+.main section {
+    * display: none; */
+    padding: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: linear-gradient(black, #2D3F4E, black);
+
+    font-size: larger;
 }
 
-.main section{
-    /* display: none; */
+.main h1 {
+    padding: 20px;
+    color: white;
 
-    background-image: linear-gradient( #2D3F4E, black);
 }
 
 .main h1{
-    padding: 20px;
-    color: white;
-    
+    color 
 }
 
-.main h2,.main h3{
-   color:white;
-   }
+.main h2, .main h3 {
+    color: wheat;
+}
 
 
 
-.main h4{
-    color: white;
+.main h4 {
+    color: wheat;
     text-decoration: underline;
     font-style: italic;
     font-size: 18px;
-    
+
 }
 
-.main p{
-   color: white; 
-    
+.main p {
+    color: white;
+    line-height: 1.5em;
 }
 
-.main a, .main a:visited{
-    color: red;
+.main a,
+.main a:visited {
+    color: #9FDBFF;
     text-decoration: none;
 }
 
-#picture{
+.toplink{
+    text-align: center;
+}
 
-/*maybe change height to 100vw if sections get big*/
+.allPictures {
 
-    /*how can I make all the children arv dette:display:
-    
+    background-image: url("Images/wine.jpg");
+
+/*fix credits
+https://pixabay.com/no/photos/vin-briller-sk%c3%a5l-ferie-feiring-%c3%a5r-6688901/
+*/
+
     height: 50vw;
     width: 100vw;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    */
-
+    background-size: cover;
+     
 }
+
+
+/*Can play around with filters or background colours
+change html if only uses to different types*/
 
 #picture-0{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/Promo/HotelRoom2.jpg");
-}
-    
-#picture-1{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/CafePromo/Restaurant.jpg");
+   
+  
 }
 
 #picture-1{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/Promo/HotelRoom2.jpg");
+    
+    filter: sepia(100);
+    
 }
 
 #picture-2{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/CafePromo/Dessert.jpg");
+    
 }
 
 #picture-3{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/Promo/Fjord1.jpg");
+    filter: grayscale(100)
 }
 
 #picture-4{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/Promo/HotelRoom1.jpg");
+   
 }
 
 #picture-5{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/Promo/HotelView1.jpg");
+    
+    filter:invert(50);
+  
 }
 
 #picture-6{
-    height: 50vw;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("Images/CafePromo/Dinner.jpg")
+   
 }
 
 #picture-7{
+        
+    filter: sepia(100);
+}
+
+
+/*Scroll with different background images:
+
+.allPictures {
     height: 50vw;
     width: 100vw;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: contain;
+
+}
+
+#picture-0 {
+    background-image: url("Images/Promo/HotelRoom2.jpg");
+}
+
+#picture-1 {
+
+    background-image: url("Images/CafePromo/Restaurant.jpg");
+}
+
+#picture-1 {
+
+    background-image: url("Images/Promo/HotelRoom2.jpg");
+}
+
+#picture-2 {
+
+    background-image: url("Images/CafePromo/Dessert.jpg");
+}
+
+#picture-3 {
+
+    background-image: url("Images/Promo/Fjord1.jpg");
+}
+
+#picture-4 {
+
+    background-image: url("Images/Promo/HotelRoom1.jpg");
+}
+
+#picture-5 {
+
+    background-image: url("Images/Promo/HotelView1.jpg");
+}
+
+#picture-6 {
+
+    background-image: url("Images/CafePromo/Dinner.jpg")
+}
+
+#picture-7 {
+
     background-image: url("Images/CafePromo/Lunch.jpg")
 }
+*/
