@@ -52,7 +52,7 @@ body {
     height: 11vw;
     background-color: black;
     /*background-image: linear-gradient(#002fa7, #000000);*/
-    
+
 }
 
 #navigation img {
@@ -96,7 +96,8 @@ body {
 .main {}
 
 .main section {
-    * display: none; */
+    /* display: none;
+    */ 
     padding: 1vw;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -111,11 +112,12 @@ body {
 
 }
 
-.main h1{
-    color 
+.main h1 {
+    color
 }
 
-.main h2, .main h3 {
+.main h2,
+.main h3 {
     color: wheat;
 }
 
@@ -140,7 +142,7 @@ body {
     text-decoration: none;
 }
 
-.toplink{
+.toplink {
     text-align: center;
 }
 
@@ -148,7 +150,7 @@ body {
 
     background-image: url("Images/wine.jpg");
 
-/*fix credits
+    /*fix credits
 https://pixabay.com/no/photos/vin-briller-sk%c3%a5l-ferie-feiring-%c3%a5r-6688901/
 */
 
@@ -158,48 +160,39 @@ https://pixabay.com/no/photos/vin-briller-sk%c3%a5l-ferie-feiring-%c3%a5r-668890
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-     
+
 }
 
 
 /*Can play around with filters or background colours
-change html if only uses to different types*/
+change html if only uses two different types*/
 
-#picture-0{
-   
-  
-}
+#picture-0 {}
 
-#picture-1{
-    
+#picture-1 {
+
     filter: sepia(100);
-    
+
 }
 
-#picture-2{
-    
-}
+#picture-2 {}
 
-#picture-3{
+#picture-3 {
     filter: grayscale(100)
 }
 
-#picture-4{
-   
+#picture-4 {}
+
+#picture-5 {
+
+    filter: invert(50);
+
 }
 
-#picture-5{
-    
-    filter:invert(50);
-  
-}
+#picture-6 {}
 
-#picture-6{
-   
-}
+#picture-7 {
 
-#picture-7{
-        
     filter: sepia(100);
 }
 
