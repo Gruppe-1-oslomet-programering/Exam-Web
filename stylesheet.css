@@ -8,7 +8,7 @@
 .topnav1 {
     position: sticky;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     z-index: 10;
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
@@ -297,6 +297,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .cafecontentheader{
     display:grid;
+    overflow-x: hidden;
     grid-template:
     [row1-start]  "header header header header"  [row1-end]
     [row2-start] "banner banner banner banner" 5px [row2-end]
@@ -304,6 +305,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .cafecontent {
     display:grid;
+    overflow-x: hidden;
     row-gap: 100px;
     justify-content: space-around;
     background-image: url("Images/CafePromo/Vegetabletop.jpg");
