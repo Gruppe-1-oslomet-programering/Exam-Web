@@ -38,7 +38,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     
-    background-position:bottom;
+
 
 }
 
@@ -109,8 +109,7 @@ body {
     background-image: linear-gradient(black, #2D3F4E, black);
 
     font-size: larger;
-    display: table
-    
+ 
 
 
 }
