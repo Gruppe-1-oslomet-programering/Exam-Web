@@ -73,6 +73,39 @@
     }
 }
 
+/*Old Index stuff*/
+.background1 {
+    display:flex;
+    height: 800px;
+    background-image: url("Images/fireplace.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content:center;
+
+}
+
+.background1 a {
+    flex: none;
+    border: 5px solid #9FDBFF;
+    background-color: #2D3F4E;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Garamond', Tahoma, serif;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    
+}
+
+.background1 img {
+    width: 60%;
+    position:relative;
+    z-index: 1;
+}
+
 /*Grid Layout for Booking Page*/
 .welcome {
     grid-area: content;
