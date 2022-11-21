@@ -1,25 +1,34 @@
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 /*Navigation Bar*/
 .topnav1 {
-    display:flex;
-    position: fixed;
+    position: sticky;
+    top: 0px;
     width: 100vw;
-    align-items: center;
-    top: 0;
     z-index: 10;
     background-color: black;
+    font-family: 'Garamond', Tahoma, serif;
+    font-size: 4vmin;
+}
+
+.topnav1 ul{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content:stretch;
+}
+
+.topnav1 li{
+    list-style-type: none;  
 }
 
 .topnav1 a {
-    float: left;
-    padding-right: 40px;
     text-decoration: none;
-    font-family: 'Garamond', Tahoma, serif;
-    font-size: 130%;
     color: white;
 }
 
@@ -29,7 +38,6 @@
 
 .topnav1 img {
     padding: 4%;
-    float: inline-start;
     width: 190px;
 }
 
@@ -311,10 +319,6 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 }
 
-.topnav2 {
-    position: sticky;
-    top: 0px;
-}
 
 
 
