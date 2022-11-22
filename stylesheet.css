@@ -17,12 +17,11 @@
 
 .topnav1 ul {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
     align-content: stretch;
 
-    object-fit: contain;
 }
 
 .topnav1 li {
