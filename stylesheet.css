@@ -484,22 +484,21 @@ I add footer to the class name
     overflow-x: hidden;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
     width: 100%;
     height: auto;
     background-color: black;
-    font-size: 1.2em;
+    font-size: 20px;
+   
+    
+    
 
    
     
    
 }
 
-.newFoot p{
-    color: white;
-}
-
-.newFoot li{
+.newFoot p, .newFoot li{
     color: white;
 }
 
@@ -507,17 +506,16 @@ I add footer to the class name
     color: #9FDBFF;
 }
 
+.newFoot h3{
+    color: wheat;
+    
+}
+
 .adressNew{
     grid-area: 1 / 1; 
     padding: 10%; 
     border: 2px solid white; 
 
-}
-
-.newFoot>:nth-child(2){
-    display: flex;
-    flex-flow: column nowrap;
-       
 }
 
 .creditsNew{
