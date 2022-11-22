@@ -144,8 +144,8 @@
 
 .intro h1 {
     grid-area: 1/2;
-
-    color: white;
+    white-space: nowrap;
+    color: wheat;
     align-self: flex-end;
     text-align: center;
     font-size: 2em;
@@ -156,7 +156,8 @@
     grid-column: 2/3;
     color: white;
     text-align: center;
-    font-size: 1.5em;
+    font-size: larger;
+    padding:5px;
 }
 
 
@@ -399,31 +400,29 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 /*Topical*/
 .main {
     overflow-x: hidden;
-    
+
 }
 
 .main section {
-    /* display: none;
-    */ 
-    padding: 1vw;
+    padding: 3vw;
     padding-left: 10vw;
     padding-right: 10vw;
     background-image: linear-gradient(black, #2D3F4E, black);
     font-size: larger;
- }
-
-/*ALL TEXT COULD USE SOME STYLING in topical page*/
+}
 
 .main h1 {
     padding: 20px;
     color: white;
 }
 
-.main h1 {
-    color: white;
+.main h2 {
+    color: wheat;
+    text-align: center;
+    padding-bottom: 2vw;
 }
 
-.main h2, .main h3 {
+.main h3 {
     color: wheat;
 }
 
@@ -432,11 +431,12 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     text-decoration: underline;
     font-style: italic;
     font-size: 18px;
-    }
+}
 
 .main p {
     color: white;
     line-height: 1.5em;
+    padding: 5px;
 }
 
 .main a,
@@ -452,9 +452,9 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 .allPictures {
 
     background-image: url("Images/wine.jpg");
-
-    /*fix credits
-https://pixabay.com/no/photos/vin-briller-sk%c3%a5l-ferie-feiring-%c3%a5r-6688901/
+    /*
+    wine.jpg taken from Pixabay:
+https://pixabay.com/images/id-6688901/
 */
 
     height: 20vw;
@@ -465,12 +465,6 @@ https://pixabay.com/no/photos/vin-briller-sk%c3%a5l-ferie-feiring-%c3%a5r-668890
     background-size: cover;
 }
 
-
-/*Can play around with filters or background colours
-change html if only uses two different types*/
-
-#picture-0 {}
-
 #picture-1 {
     filter: sepia(100);
 }
@@ -478,6 +472,62 @@ change html if only uses two different types*/
 #picture-2 {
     filter: invert(100)
 }
+
+/*Footer*/
+
+/*may change name to only footer and no class
+if we will use the same on every page
+For some reason its fucked up if 
+I add footer to the class name
+*/
+.newFoot{
+    overflow-x: hidden;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    background-color: black;
+    font-size: 1.2em;
+
+   
+    
+   
+}
+
+.newFoot p{
+    color: white;
+}
+
+.newFoot li{
+    color: white;
+}
+
+.newFoot a{
+    color: #9FDBFF;
+}
+
+.adressNew{
+    grid-area: 1 / 1; 
+    padding: 10%; 
+    border: 2px solid white;   
+
+}
+
+.creditsNew{
+    grid-area: 1 / 2;
+    text-align: center; 
+    padding: 10%;
+    border: 2px solid white;   
+}
+
+.creditsNew ul{
+    list-style-type: none;
+}
+
+
+
+
 
 
 
@@ -528,14 +578,22 @@ change html if only uses two different types*/
             "footer footer footer"
     }
 
-    .intro p{ 
+    /*Index*/
+    .intro p {
         grid-column: 1/4;
-        }
+    }
 
+    .bookingButton a,
+    .bookingButton a:visited {
+        font-size: 15px;
+    }
+
+    /*Topical*/
     .allPictures {
         height: 60vw;
-        /*check on phone if this needs to be adjusted*/
     }
+
+   
 
 
 }
