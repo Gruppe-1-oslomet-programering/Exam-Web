@@ -1,8 +1,54 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+
+p{
+    color: white;
+    line-height: 1.5em;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+h2{
 
 }
+
+h3{
+    
+}
+
+h4{
+
+}
+
+/*own link design for navigation*/
+a, a:visited{
+    color: #9FDBFF;
+    text-decoration: none;
+    white-space: nowrap;
+ 
+     
+ }
+ 
+ a:hover{
+
+ }
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
 
 /*Navigation Bar*/
 .topnav1 {
@@ -24,9 +70,11 @@
 
 }
 
+/*
 .topnav1 li {
     list-style-type: none;
 }
+*/
 
 .topnav1 a {
     text-decoration: none;
@@ -84,10 +132,12 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
+/*
 .background1 img {
     width: 100%;
     height: 100%;
 }
+*/
 
 .bookingButton {
     grid-row: 3;
@@ -100,19 +150,23 @@
 
 .bookingButton a,
 .bookingButton a:visited {
-    white-space: nowrap;
-    font-size: 35px;
+    /*white-space: nowrap;
     text-decoration: none;
-    color: white;
+    color: white;*/
     font-family: 'Garamond', Tahoma, serif;
     border: 5px solid #9FDBFF;
-    background-color: #2D3F4E;
+    background-color: black;
     text-align: center;
     padding: 10px;
+    border-radius: 20px;
+    font-size: 35px;
+
+
+    
 }
 
 .bookingButton a:hover {
-    color: #9FDBFF;
+    background-color: #2D3F4E;
 }
 
 .slogan {
@@ -137,25 +191,28 @@
 }
 
 .intro img {
-    width: 100%;
+   /* width: 100%;
     height: 100%;
+    */
     grid-area: 2/2;
 
 }
 
 .intro h1 {
     grid-area: 1/2;
+
     white-space: nowrap;
     color: wheat;
     align-self: flex-end;
-    text-align: center;
+   /* text-align: center;*/
     font-size: 2em;
 }
 
 .intro p {
     grid-row: 3;
     grid-column: 2/3;
-    color: white;
+
+    /*color: white;*/
     text-align: center;
     font-size: larger;
     padding: 5px;
@@ -173,11 +230,12 @@
     color: white;
     padding: 20%;
 }
-
+/*
 .welcome a {
     text-decoration: none;
     color: #9FDBFF;
 }
+*/
 
 .welcome-image {
     grid-area: image;
@@ -198,6 +256,7 @@
 
 .location ul {
     text-align: left;
+    list-style-type: disc;
 }
 
 .location-image {
@@ -222,7 +281,7 @@
     padding: 10%;
     font-size: x-small;
 }
-
+/*
 .footer1 a {
     color: #9FDBFF;
 }
@@ -230,6 +289,7 @@
 .footer1 li {
     list-style-type: none;
 }
+*/
 
 
 .booking {
@@ -243,10 +303,11 @@
     padding: 10%;
 
 }
-
+/*
 .booking a {
     color: #9FDBFF;
 }
+*/
 
 
 
@@ -266,9 +327,13 @@
     background-color: #000000;
 }
 
+/*Dont know if this is necessary, since 
+default img is set to 100% now
+
 .headercafe img {
     width: 100vw;
 }
+*/
 
 .banner {
     grid-area: banner;
@@ -304,10 +369,11 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     color: white;
     place-self: center stretch;
 }
-
+/*
 .defaultMenu h1 {
     text-align: center;
 }
+*/
 
 .defaultMenu h2 {
     font-family: 'Times New Roman', Times, serif;
@@ -326,7 +392,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .bubble h1 {
     font-size: 9vmin;
-    color: white;
+    /*color: white;*/
     text-shadow: 2px 2px #000000;
 }
 
@@ -401,27 +467,30 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 /*Topical*/
 .main {
     overflow-x: hidden;
-
 }
 
 .main section {
-    padding: 3vw;
+    padding: 4vw;
     padding-left: 10vw;
     padding-right: 10vw;
     background-image: linear-gradient(black, #2D3F4E, black);
     font-size: larger;
 }
-
+/*
 .main h1 {
     padding: 20px;
     color: white;
 }
+*/
+
 
 .main h2 {
     color: wheat;
     text-align: center;
-    padding-bottom: 2vw;
+    padding: 15px;
+    
 }
+
 
 .main h3 {
     color: wheat;
@@ -433,6 +502,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     font-style: italic;
     font-size: 18px;
 }
+
 
 .main p {
     color: white;
@@ -447,7 +517,20 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 }
 
 .toplink {
-    text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.toplink a{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    
+    padding: 5px;
+    margin: 10px;
+    border: 5px solid #9FDBFF;
+    border-radius: 20px;
+    background-color: #2D3F4E;  
 }
 
 .allPictures {
@@ -587,7 +670,7 @@ I add footer to the class name
 
     /*Topical*/
     .allPictures {
-        height: 60vw;
+        height: 70vw;
     }
 
 
