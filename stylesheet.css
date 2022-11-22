@@ -481,7 +481,7 @@ For some reason its fucked up if
 I add footer to the class name
 */
 .newFoot{
-    overflow-x: hidden;
+    object-fit: contain;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 50%);
