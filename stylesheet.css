@@ -518,17 +518,13 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .toplink {
   display: flex;
-  justify-content: center;
+  justify-content: end;
 }
 
-.toplink a{
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    
+.toplink a{  
     padding: 5px;
     margin: 10px;
-    border: 5px solid #9FDBFF;
+    border: 3px solid #9FDBFF;
     border-radius: 20px;
     background-color: #2D3F4E;  
 }
