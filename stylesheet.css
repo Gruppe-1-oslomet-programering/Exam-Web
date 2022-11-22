@@ -510,8 +510,14 @@ I add footer to the class name
 .adressNew{
     grid-area: 1 / 1; 
     padding: 10%; 
-    border: 2px solid white;   
+    border: 2px solid white; 
 
+}
+
+.newFoot>:nth-child(2){
+    display: flex;
+    flex-flow: column nowrap;
+       
 }
 
 .creditsNew{
