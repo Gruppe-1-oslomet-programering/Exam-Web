@@ -56,9 +56,9 @@ img{
     top: 0px;
     width: 100%;
     z-index: 10;
-    background-color: red;
+    background-color: black;
     font-family: 'Garamond', Tahoma, serif;
-    font-size: 3vw;
+    font-size: 4vw;
     overflow: hidden;
 }
 
@@ -90,7 +90,7 @@ img{
 
 .topnav1 img {
     padding: 4%;
-    width: 24vw;
+    width: 25vw;
     height: fit-content;
 }
 
