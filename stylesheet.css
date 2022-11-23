@@ -663,6 +663,11 @@ I add footer to the class name
         grid-column: 1/4;
     }
 
+    .bookingButton {
+        grid-row: 3/5;
+
+    }
+
     .bookingButton a,
     .bookingButton a:visited {
         font-size: 15px;
