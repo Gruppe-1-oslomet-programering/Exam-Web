@@ -90,7 +90,8 @@ img{
 
 .topnav1 img {
     padding: 4%;
-    width: 190px;
+    width: 24vw;
+    height: fit-content;
 }
 
 /*Slideshow Gallery*/
