@@ -59,11 +59,12 @@ img{
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
     font-size: 3vw;
+    overflow: hidden;
 }
 
 .topnav1 ul {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     align-content: stretch;
@@ -101,7 +102,7 @@ img{
 }
 
 .gallery-container img {
-    width: 100%;
+    /* width: 100%; */
     height: 600px;
     object-fit: cover;
 
@@ -682,15 +683,14 @@ I add footer to the class name
         background-image: linear-gradient(#2D3F4E, #000000);
     }
 
-    /*Navigation bar*/
+    /*Navigation bar
    
     .topnav1 ul {
         flex-flow: row nowrap;
         justify-content: space-evenly;
-
     }
 
-
+*/
 
 
 }
