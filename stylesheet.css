@@ -3,48 +3,41 @@
     margin: 0;
 }
 
-ul{
+ul {
     list-style-type: none;
-    
+
 }
 
 
-p{
+p {
     color: white;
     line-height: 1.5em;
 }
 
-h1{
+h1 {
     text-align: center;
     color: white;
 }
 
-h2{
+h2 {}
 
-}
+h3 {}
 
-h3{
-    
-}
-
-h4{
-
-}
+h4 {}
 
 /*own link design for navigation*/
-a, a:visited{
+a,
+a:visited {
     color: #9FDBFF;
     text-decoration: none;
     white-space: nowrap;
- 
-     
- }
- 
- a:hover{
 
- }
 
-img{
+}
+
+a:hover {}
+
+img {
     width: 100%;
     height: 100%;
 }
@@ -58,19 +51,15 @@ img{
     z-index: 10;
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
-    font-size: 4vw;
-    overflow: hidden;
+    font-size: 4vmin;
 }
-
 
 .topnav1 ul {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: stretch;
-    white-space: nowrap;
-    padding-right: 10px;
 
 }
 
@@ -167,7 +156,7 @@ img{
     font-size: 35px;
 
 
-    
+
 }
 
 .bookingButton a:hover {
@@ -196,7 +185,7 @@ img{
 }
 
 .intro img {
-   /* width: 100%;
+    /* width: 100%;
     height: 100%;
     */
     grid-area: 2/2;
@@ -209,7 +198,7 @@ img{
     white-space: nowrap;
     color: wheat;
     align-self: flex-end;
-   /* text-align: center;*/
+    /* text-align: center;*/
     font-size: 2em;
 }
 
@@ -235,6 +224,7 @@ img{
     color: white;
     padding: 20%;
 }
+
 /*
 .welcome a {
     text-decoration: none;
@@ -286,6 +276,7 @@ img{
     padding: 10%;
     font-size: x-small;
 }
+
 /*
 .footer1 a {
     color: #9FDBFF;
@@ -308,6 +299,7 @@ img{
     padding: 10%;
 
 }
+
 /*
 .booking a {
     color: #9FDBFF;
@@ -374,6 +366,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     color: white;
     place-self: center stretch;
 }
+
 /*
 .defaultMenu h1 {
     text-align: center;
@@ -481,6 +474,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     background-image: linear-gradient(black, #2D3F4E, black);
     font-size: larger;
 }
+
 /*
 .main h1 {
     padding: 20px;
@@ -493,7 +487,7 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
     color: wheat;
     text-align: center;
     padding: 15px;
-    
+
 }
 
 
@@ -522,16 +516,16 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 }
 
 .toplink {
-  display: flex;
-  justify-content: end;
+    display: flex;
+    justify-content: end;
 }
 
-.toplink a{  
+.toplink a {
     padding: 5px;
     margin: 10px;
     border: 3px solid #9FDBFF;
     border-radius: 20px;
-    background-color: #2D3F4E;  
+    background-color: #2D3F4E;
 }
 
 .allPictures {
@@ -574,7 +568,7 @@ I add footer to the class name
     height: auto;
     background-color: black;
     justify-items: contain;
-  
+
 }
 
 .newFoot p,
@@ -693,6 +687,21 @@ I add footer to the class name
     }
 
 
+    /*Navigation Bar*/
+    .topnav1 {
+        font-size: 4vw;
+        overflow: hidden;
+    }
+
+    .topnav1 ul {
+
+        flex-flow: row nowrap;
+        white-space: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        padding-right: 10px;
+
+    }
 
 
 }
