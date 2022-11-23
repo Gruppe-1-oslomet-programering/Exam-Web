@@ -58,7 +58,7 @@ img{
     z-index: 10;
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
-    font-size: 4vmin;
+    font-size: 3vw;
 }
 
 .topnav1 ul {
@@ -680,6 +680,14 @@ I add footer to the class name
         grid-row: 1;
         grid-column: 1 / 3;
         background-image: linear-gradient(#2D3F4E, #000000);
+    }
+
+    /*Navigation bar*/
+   
+    .topnav1 ul {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+
     }
 
 
