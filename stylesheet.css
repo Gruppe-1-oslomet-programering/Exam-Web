@@ -67,9 +67,10 @@ img{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: stretch;
     white-space: nowrap;
+    padding-right: 10px;
 
 }
 
