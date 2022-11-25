@@ -1,0 +1,815 @@
+<<<<<<< Updated upstream
+=======
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+
+p {
+    color: white;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+/*own link design for navigation*/
+a,
+a:visited {
+    color: #9FDBFF;
+    text-decoration: none;
+    white-space: nowrap;
+
+
+}
+
+a:hover {}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Navigation Bar*/
+
+
+/*under construction start*/
+header{
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 10; 
+    background-color: black;
+    padding: 5px;
+    
+    font-size: 25px  
+    
+}
+
+header ul{   
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: auto;
+    
+}
+
+header img{
+    width: auto;
+    height: 100px;
+}
+
+.home{
+    grid-row: 1;
+    grid-column: 1/4;
+ 
+    
+}
+
+
+header nav{
+    grid-row: 2;
+    grid-column: 1/6;
+
+    display: grid;
+    grid-template-areas:
+    "bookNow dining accessability topical";
+ 
+}
+
+
+
+
+
+
+
+
+.bookNow{
+   grid-area: bookNow;
+}
+
+.dining{
+    grid-area: dining;
+}
+.accessability{
+grid-area: accessability;
+
+}
+.topical{
+grid-area: topical;
+}
+
+
+nav a, nav a:visited{
+    display: block; 
+    height: 50px;
+    text-align: center;
+  
+    padding-top: 20px;
+  
+
+}
+
+nav a:hover{
+background-color: black;
+border: 1px solid #9FDBFF;
+}
+
+nav .active{ 
+    color: white;
+    font-size: larger;
+}
+
+
+/*under construction end*/
+
+/*
+.topnav1 {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    background-color: black;
+    font-family: 'Garamond', Tahoma, serif;
+    font-size: 4vmin;
+}
+
+.topnav1 ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: stretch;
+
+}
+*/
+/*
+.topnav1 li {
+    list-style-type: none;
+}
+*/
+
+.topnav1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.topnav1 a:hover {
+    color: #9FDBFF;
+}
+
+.topnav1 img {
+    padding: 4%;
+    width: 25vw;
+    height: fit-content;
+}
+
+/*Slideshow Gallery*/
+.promoGallery {
+    display: none;
+}
+
+.gallery-container {
+    max-width: 100%;
+    height: 600px;
+}
+
+.gallery-container img {
+    /* width: 100%; */
+    height: 600px;
+    object-fit: cover;
+
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .6
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*Index*/
+.background1 {
+    display: grid;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*
+.background1 img {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.bookingButton {
+    grid-row: 3;
+    grid-column: 2;
+    z-index: 1;
+    align-self: center;
+
+}
+
+
+.bookingButton a,
+.bookingButton a:visited {
+    /*white-space: nowrap;
+    text-decoration: none;
+    color: white;*/
+    font-family: 'Garamond', Tahoma, serif;
+    border: 5px solid #9FDBFF;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 35px;
+
+
+
+}
+
+.bookingButton a:hover {
+    background-color: #2D3F4E;
+}
+
+.slogan {
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    z-index: 1;
+}
+
+.fire {
+    grid-row: 2 / 5;
+    grid-column: 3 / 5;
+}
+
+.intro {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-image: linear-gradient(#000000, #2D3F4E);
+    gap: 10px 0;
+}
+
+.intro img {
+    /* width: 100%;
+    height: 100%;
+    */
+    grid-area: 2/2;
+
+}
+
+.intro h1 {
+    grid-area: 1/2;
+
+    white-space: nowrap;
+    color: wheat;
+    align-self: flex-end;
+    /* text-align: center;*/
+    font-size: 2em;
+}
+
+.intro p {
+    grid-row: 3;
+    grid-column: 2/3;
+
+    /*color: white;*/
+    text-align: center;
+    font-size: larger;
+    padding: 5px;
+}
+
+
+
+
+/*Grid Layout for Booking Page*/
+.welcome {
+    grid-area: content;
+    text-align: center;
+    place-self: stretch stretch;
+    background-image: linear-gradient(#000000, #2D3F4E);
+    color: white;
+    padding: 20%;
+}
+
+/*
+.welcome a {
+    text-decoration: none;
+    color: #9FDBFF;
+}
+*/
+
+.welcome-image {
+    grid-area: image;
+    place-self: stretch stretch;
+    background-image: url("Images/Promo/HotelRoom1.jpg");
+    background-size: cover;
+}
+
+
+.location {
+    grid-area: content1;
+    place-self: stretch stretch;
+    text-align: center;
+    background-image: linear-gradient(#000000, #2D3F4E);
+    color: white;
+    padding: 20%;
+}
+
+.location ul {
+    text-align: left;
+    list-style-type: disc;
+}
+
+.location-image {
+    grid-area: image1;
+    place-self: stretch stretch;
+    background-image: url("Images/Promo/Alesund.jpg");
+    background-size: cover;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 10%;
+}
+
+.footer1 {
+    grid-area: footer1;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    padding: 10%;
+    font-size: x-small;
+}
+
+/*
+.footer1 a {
+    color: #9FDBFF;
+}
+
+.footer1 li {
+    list-style-type: none;
+}
+*/
+
+
+.booking {
+    grid-area: booking;
+    place-self: stretch stretch;
+    text-align: center;
+    font-size: 4vmin;
+    color: white;
+    border: 5px solid #9FDBFF;
+    background-color: #2D3F4E;
+    padding: 10%;
+
+}
+
+/*
+.booking a {
+    color: #9FDBFF;
+}
+*/
+
+
+
+.bookingcontent {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template:
+        [row1-start] "... ... ... ..." 3% [row1-end] [row2-start] "... content image ..."[row2-end] [row3-start] "... image1 content1 ..."[row3-end] [row4-start] "... booking booking ..."[row4-end] [row5-start] "footer footer footer1 footer1" 10%[row5-end] / 5% 40% 50% 5%;
+    gap: 40px 0px;
+}
+
+
+/*Grid Layout for Cafe Page*/
+.headercafe {
+    grid-area: header;
+    background-color: #000000;
+}
+
+/*Dont know if this is necessary, since 
+default img is set to 100% now
+
+.headercafe img {
+    width: 100vw;
+}
+*/
+
+.banner {
+    grid-area: banner;
+    background-color: black;
+    align-items: start;
+}
+
+.welcomecafe {
+    grid-area: cafewelcome;
+    padding: 20%;
+    text-align: center;
+    font-size: 6vmin;
+    color: #c0e7ff;
+    text-shadow: 2px 2px #2D3F4E;
+    place-self: center stretch;
+    background-image: url("Images/CafePromo/Restaurant.jpg");
+    background-size: cover;
+    border: 4px solid #2D3F4E;
+
+}
+
+
+/*I thought this was cool:
+like the color for the menus, but wanted to be coherent..
+background-image:linear-gradient(#d4cfb3,#c8a272);*/
+
+.defaultMenu {
+    z-index: 4;
+    border: 5px solid #9FDBFF;
+    background-color: #2D3F4E;
+    padding: 10%;
+    border-radius: 4%;
+    color: white;
+    place-self: center stretch;
+}
+
+/*
+.defaultMenu h1 {
+    text-align: center;
+}
+*/
+
+.defaultMenu h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.bubble {
+    background-size: cover;
+    z-index: 1;
+    border: 4px solid white;
+    border-radius: 20%;
+    text-align: center;
+    place-self: start center;
+    padding: 40%
+}
+
+.bubble h1 {
+    font-size: 9vmin;
+    /*color: white;*/
+    text-shadow: 2px 2px #000000;
+}
+
+.breakfast {
+    grid-area: breakfast;
+    background-image: url("Images/CafePromo/Breakfast.jpg");
+}
+
+
+.breakfastmenu {
+    grid-area: bmenu;
+}
+
+
+.lunch {
+    grid-area: lunch;
+    background-image: url("Images/CafePromo/Lunch.jpg");
+}
+
+
+.lunchmenu {
+    grid-area: lmenu;
+
+}
+
+.dinner {
+    grid-area: dinner;
+    background-image: url("Images/CafePromo/Dinner.jpg");
+}
+
+
+.dinnermenu {
+    grid-area: dmenu;
+
+}
+
+.dessert {
+    grid-area: dessert;
+    background-image: url("Images/CafePromo/Dessert.jpg");
+}
+
+
+.dessertmenu {
+    grid-area: dsmenu;
+
+}
+
+
+.footercafe {
+    grid-area: footer;
+    background-color: #000000;
+}
+
+.cafecontentheader {
+    display: grid;
+    overflow-x: hidden;
+    grid-template:
+        [row1-start] "header header header header"[row1-end] [row2-start] "banner banner banner banner" 5px [row2-end]
+}
+
+.cafecontent {
+    display: grid;
+    overflow-x: hidden;
+    row-gap: 100px;
+    justify-content: space-around;
+    background-image: url("Images/CafePromo/Vegetabletop.jpg");
+    grid-template:
+        [row1-start] "... ... ... ..."[row1-end] [row2-start] "cafewelcome cafewelcome cafewelcome cafewelcome" 400px [row2-end] [row3-start] "breakfast bmenu bmenu bmenu" 500px [row3-end] [row4-start] "lmenu lmenu lmenu lunch" 500px[row4-end] [row5-start] "dinner dmenu dmenu dmenu" 500px[row5-end] [row6-start] "dsmenu dsmenu dsmenu dessert" 500px[row6-end] [row7-start] "footer footer footer1 footer1"[row7-end] /300px auto auto 300px;
+
+}
+
+/*Topical*/
+.main {
+    overflow-x: hidden;
+}
+
+.main section {
+    padding: 4vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-image: linear-gradient(black, #2D3F4E, black);
+    font-size: larger;
+}
+
+/*
+.main h1 {
+    padding: 20px;
+    color: white;
+}
+*/
+
+
+.main h2 {
+    color: wheat;
+    text-align: center;
+    padding: 15px;
+
+}
+
+
+.main h3 {
+    color: wheat;
+}
+
+.main h4 {
+    color: wheat;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+.main p {
+    color: white;
+    line-height: 1.5em;
+    padding: 5px;
+}
+
+.main a,
+.main a:visited {
+    color: #9FDBFF;
+    text-decoration: none;
+}
+
+.toplink {
+    display: flex;
+    justify-content: end;
+}
+
+.toplink a {
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid #9FDBFF;
+    border-radius: 20px;
+    background-color: #2D3F4E;
+}
+
+.allPictures {
+
+    background-image: url("Images/wine.jpg");
+    /*
+    wine.jpg taken from Pixabay:
+https://pixabay.com/images/id-6688901/
+*/
+
+    height: 20vw;
+    width: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#picture-1 {
+    filter: sepia(100);
+}
+
+#picture-2 {
+    filter: invert(100)
+}
+
+/*Footer*/
+
+/*may change name to only footer and no class
+if we will use the same on every page
+For some reason its fucked up if 
+I add footer to the class name
+*/
+.newFoot {
+    object-fit: contain;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 50%);
+    width: 100%;
+    height: auto;
+    background-color: black;
+    justify-items: contain;
+
+}
+
+.newFoot p,
+.newFoot li {
+    color: white;
+}
+
+.newFoot a {
+    color: #9FDBFF;
+}
+
+.newFoot h3 {
+    color: wheat;
+
+}
+
+.adressNew {
+    grid-area: 1 / 1;
+    padding: 10%;
+}
+
+.creditsNew {
+    grid-area: 1 / 2;
+    text-align: center;
+    padding: 10%;
+}
+
+.creditsNew ul {
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Query for Phone*/
+@media screen and (max-width: 700px) {
+
+    /*BookingPage*/
+    .location-image {
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .footer1 {
+        display: none;
+    }
+
+    .bookingcontent {
+        grid-template:
+            "... ... ..."
+            "... content ..."
+            "... image ..." 500px
+            "... content1 ..."
+            "... image1 ..." 250px
+            "... booking ..."
+            "footer footer footer"
+    }
+
+    .cafecontent {
+        grid-template:
+            "... ... ..."
+            "cafewelcome cafewelcome cafewelcome"
+            "breakfast breakfast breakfast"
+            "bmenu bmenu bmenu"
+            "lunch lunch lunch"
+            "lmenu lmenu  lmenu"
+            "dinner dinner dinner"
+            "dmenu dmenu dmenu"
+            "dessert dessert dessert"
+            "dsmenu dsmenu dsmenu"
+            "footer footer footer"
+    }
+
+    /*Index*/
+    .intro p {
+        grid-column: 1/4;
+    }
+
+    .bookingButton {
+        grid-row: 3/5;
+
+    }
+
+    .bookingButton a,
+    .bookingButton a:visited {
+        font-size: 15px;
+    }
+
+    /*Topical*/
+    .allPictures {
+        height: 70vw;
+    }
+
+
+    /*Footer*/
+    .adressNew {
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+
+    .creditsNew {
+        grid-row: 1;
+        grid-column: 1 / 3;
+        background-image: linear-gradient(#2D3F4E, #000000);
+    }
+
+
+    /*Navigation Bar*/
+    /*.topnav1 {
+        font-size: 4vw;
+        overflow: hidden;
+    }
+
+    .topnav1 ul {
+
+        flex-flow: row nowrap;
+        white-space: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        padding-right: 10px;
+
+    }
+    */
+    header nav{
+        grid-row: 1/6;
+        grid-column: 2/4;
+    
+        display: grid;
+        grid-template-areas:
+        "bookNow"
+        "dining"
+        "accessability" 
+        "topical";
+    }
+
+
+}
+>>>>>>> Stashed changes
