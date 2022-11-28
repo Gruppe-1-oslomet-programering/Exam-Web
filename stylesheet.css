@@ -590,7 +590,6 @@ background-image:linear-gradient(#d4cfb3,#c8a272);*/
 
 .main p {
     color: white;
-    line-height: 1.5em;
     padding: 5px;
 }
 
@@ -743,8 +742,7 @@ I add footer to the class name
 
     }
 
-    .bookingButton a,
-    .bookingButton a:visited {
+    .bookingButton a{
         font-size: 15px;
     }
 
