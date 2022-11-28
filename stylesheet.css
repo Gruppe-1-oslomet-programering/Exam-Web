@@ -202,7 +202,7 @@ nav img{
     height: fit-content;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px){
 
     nav ul{
         grid-template-rows: 1fr;
@@ -219,7 +219,7 @@ nav img{
     nav img{
         width: 7em;
     }
-
+}
 
 /*Footer*/
 footer{
