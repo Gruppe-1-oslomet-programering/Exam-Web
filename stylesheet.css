@@ -104,29 +104,29 @@ p {
 h1,
 h2 {
     text-align: center;
-    font-size:2.5em;
+    font-size: 2.5em;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 
 h3 {
-    color:wheat;
+    color: wheat;
 }
 
-h4{
-    color:white;
+h4 {
+    color: white;
 }
 
 dt,
 dd {
-    color:white;
+    color: white;
     font-size: larger;
 }
 
 a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 a:hover {
@@ -151,7 +151,7 @@ img {
 
 }
 
-.button a{
+.button a {
     font-family: 'Garamond', Tahoma, serif;
     border: 5px solid #9FDBFF;
     background-color: black;
@@ -176,7 +176,7 @@ nav{
     font-size: 1.5em;
 }
 
-nav ul{
+nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, fit-content);
@@ -186,6 +186,7 @@ nav li{
     border: 1px solid white;
     background-color: #000000;
     z-index: 3;
+    text-align: center;
 }
 
 nav li:first-child{
@@ -194,8 +195,7 @@ nav li:first-child{
     z-index: 1;
 }
 
-
-nav img{
+nav img {
     padding: 4%;
     width: 9em;
     height: fit-content;
@@ -212,10 +212,11 @@ footer{
     width: 100%;
     background-color: black;
     justify-items: contain;
-    color:white;
+    color: white;
+    padding-bottom: 20px;
 }
 
-address{
+address {
     grid-area: 1 / 1;
     padding: 10%;
 }
@@ -305,15 +306,12 @@ address{
     white-space: nowrap;
     color: wheat;
     align-self: flex-end;
-    /* text-align: center;*/
     font-size: 2em;
 }
 
 .intro p {
     grid-row: 3;
     grid-column: 2/3;
-
-    /*color: white;*/
     text-align: center;
     font-size: larger;
     padding: 5px;
@@ -436,7 +434,7 @@ Grid Layout for Cafe Page*/
     font-size: 4em;
     text-shadow: 2px 2px #000000;
     background-color: #2d3f4eac;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.666),#2d3f4eaf,rgba(0, 0, 0, 0.666));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.666), #2d3f4eaf, rgba(0, 0, 0, 0.666));
     padding: 20px;
     border-radius: 20%;
     border: 2px solid #9FDBFF;
@@ -492,9 +490,7 @@ Grid Layout for Cafe Page*/
     display: grid;
     overflow-x: hidden;
     grid-template:
-        [row1-start] "header header header header" [row1-end]
-         [row2-start] "banner banner banner banner" 5px [row2-end]
-         /auto auto auto auto;
+        [row1-start] "header header header header"[row1-end] [row2-start] "banner banner banner banner" 5px [row2-end] /auto auto auto auto;
 }
 
 .cafe-content {
@@ -522,7 +518,7 @@ Grid Layout for Cafe Page*/
 }
 
 .main section {
-    padding: 4vw;
+    padding: 2vw;
     padding-left: 10vw;
     padding-right: 10vw;
     background-image: linear-gradient(black, #2D3F4E, black);
@@ -536,7 +532,6 @@ Grid Layout for Cafe Page*/
 
 }
 
-
 .main h3 {
     color: wheat;
 }
@@ -547,33 +542,25 @@ Grid Layout for Cafe Page*/
     font-style: italic;
 }
 
-
 .main p {
     color: white;
     padding: 5px;
 }
 
-.main a,
-.main a:visited {
+.main a {
     color: #9FDBFF;
     text-decoration: none;
 }
 
-.main .button{
+.main .button {
     display: flex;
     justify-content: end;
 }
 
 
-.allPictures {
-
+.wine-picture {
     background-image: url("Images/wine.jpg");
-    /*
-    wine.jpg by Oleksandr Pidvalnyi taken from Pixabay:
-https://pixabay.com/images/id-6688901/
-*/
-
-    height: 20vw;
+    height: 30vw;
     width: 100vw;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -583,6 +570,7 @@ https://pixabay.com/images/id-6688901/
 
 #picture-1 {
     filter: sepia(100);
+
 }
 
 #picture-2 {
