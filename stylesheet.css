@@ -147,9 +147,10 @@ a:hover {
     color: #9FDBFF;
 }
 
-a:active {
+.active {
     color:#9FDBFF
 }
+
 
 /*own link design for navigation*/
 /* I think visited means when you've visited the site, maybe we can code
@@ -182,31 +183,55 @@ nav{
 
 nav ul{
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    justify-items: center;
-    justify-content: center;
-    /*display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    align-content: stretch;
-    content(50px);
-        grid-gap: 20px;
-        justify-items: end;*/
-    
-
-
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, fit-content);
+    row-gap: 0.2em;  
 }
 
+nav li{
+    background-color: #000000;
+    z-index: 3;
+}
 
+nav li:first-child{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    z-index: 1;
+}
 
 
 nav img{
     padding: 4%;
-    width: 5em;
+    width: 9em;
     height: fit-content;
 }
 
+@media screen and (min-width: 600px) {
+
+    nav ul{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(5, 1fr);
+        place-content: center space-between;
+        align-items: center;
+    }
+
+    nav li:first-child{
+        grid-column-end: 1;
+        z-index: 1;
+    }
+
+    nav img{
+        width: 7em;
+    }
+
+
+
+    
+
+    
+}
 /*Maybe we can delete this and just have nav?
 .topnav1 {
     position: sticky;
