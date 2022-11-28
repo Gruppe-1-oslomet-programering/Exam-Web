@@ -179,12 +179,13 @@ nav ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, fit-content);
-    row-gap: 0.2em;  
+    row-gap: 0.2em;   
 }
 
 nav li{
     background-color: #000000;
     z-index: 3;
+    text-align: center;    
 }
 
 nav li:first-child{
@@ -194,7 +195,6 @@ nav li:first-child{
     grid-column-end: 4;
     z-index: 1;
 }
-
 
 nav img{
     padding: 4%;
@@ -232,6 +232,7 @@ footer{
     background-color: black;
     justify-items: contain;
     color:white;
+    padding-bottom: 20px;
 }
 
 address{
@@ -247,6 +248,17 @@ address{
 
 .credit-link{
     display: none;
+    grid-area: 2/1;
+    text-align: center;
+}
+
+.credit-page{
+    display: grid;
+    background-color: #2D3F4E;
+}
+
+.credit-page li{
+    color: white;
 }
 
 
@@ -439,6 +451,10 @@ Grid Layout for Cafe Page*/
 
 }
 
+.welcomecafe img{
+    border-radius: 100px;
+}
+
 .defaultMenu {
     z-index: 4;
     border: 5px solid #9FDBFF;
@@ -589,7 +605,7 @@ Grid Layout for Cafe Page*/
 }
 
 
-.allPictures {
+.wine-picture {
 
     background-image: url("Images/wine.jpg");
     /*
