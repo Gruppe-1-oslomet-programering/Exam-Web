@@ -1,3 +1,101 @@
+/*
+header{
+    overflow: hidden;
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 10; 
+    background-color: black;
+    padding: 5px;
+    
+    font-size: 25px  
+    
+}
+
+header ul{   
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: auto;
+    
+}
+
+header img{
+    width: auto;
+    height: 100px;
+}
+
+.home{
+    grid-row: 1;
+    grid-column: 1/4;
+ 
+    
+}
+
+
+header nav{
+    grid-row: 2;
+    grid-column: 1/6;
+
+    display: grid;
+    grid-template-areas:
+    "bookNow dining accessability topical";
+ 
+}
+
+
+.bookNow{
+   grid-area: bookNow;
+}
+
+.dining{
+    grid-area: dining;
+}
+.accessability{
+grid-area: accessability;
+
+}
+.topical{
+grid-area: topical;
+}
+
+
+nav a, nav a:visited{
+    display: block; 
+    height: 50px;
+    text-align: center;
+  
+    padding-top: 20px;
+  
+
+}
+
+nav a:hover{
+background-color: black;
+border: 1px solid #9FDBFF;
+}
+
+nav .active{ 
+    color: white;
+    font-size: larger;
+}
+
+
+.topnav1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.topnav1 a:hover {
+    color: #9FDBFF;
+}
+
+.topnav1 img {
+    padding: 4%;
+    width: 25vw;
+    height: fit-content;
+}
+*/
+
 * {
     padding: 0;
     margin: 0;
