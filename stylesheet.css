@@ -15,13 +15,12 @@ p {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     line-height: 1.5em;
-    font-size: 3.3vmin;
 }
 
 h1,
 h2 {
     text-align: center;
-    font-size: 6vmin;
+    font-size:2.5em;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -50,6 +49,10 @@ a:hover {
     color: #9FDBFF;
 }
 
+a:active {
+    color:#9FDBFF
+}
+
 /*own link design for navigation*/
 /* I think visited means when you've visited the site, maybe we can code
 something else
@@ -76,22 +79,33 @@ nav{
     z-index: 10;
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
-    font-size: 4vmin;
+    font-size: 1.5em;
 }
 
 nav ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    justify-items: center;
+    justify-content: center;
+    /*display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
     align-content: stretch;
+    content(50px);
+        grid-gap: 20px;
+        justify-items: end;*/
+    
+
+
 }
+
 
 
 
 nav img{
     padding: 4%;
-    width: 20vmin;
+    width: 5em;
     height: fit-content;
 }
 
@@ -701,6 +715,8 @@ I add footer to the class name
 
 /*Media Query for Phone*/
 @media screen and (max-width: 700px) {
+
+   
 
     .credits {
         display: none; /*footer hides credits*/
