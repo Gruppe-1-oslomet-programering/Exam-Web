@@ -81,16 +81,17 @@ nav.active{
 
 */
 
+/* || SITEWIDE */
+
 * {
     padding: 0;
     margin: 0;
 }
 
-/* || SITEWIDE */
+
 
 ul {
     list-style-type: none;
-
 }
 
 
@@ -133,7 +134,7 @@ a:hover {
 }
 
 .active {
-    color:#9FDBFF
+    background-color: #2D3F4E;
 }
 
 img {
@@ -164,7 +165,7 @@ img {
     background-color: #2D3F4E;
 }
 
-/*Navigation Bar*/
+/* || NAV- Navigation Bar*/
 nav{
     position: sticky;
     top: 0px;
@@ -179,19 +180,17 @@ nav ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, fit-content);
-    row-gap: 0.2em;  
 }
 
 nav li{
+    border: 1px solid white;
     background-color: #000000;
     z-index: 3;
 }
 
 nav li:first-child{
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    border: none;
+    grid-area: 1 / 1 / 5 / 4 ;
     z-index: 1;
 }
 
@@ -202,26 +201,8 @@ nav img{
     height: fit-content;
 }
 
-@media screen and (min-width: 600px){
 
-    nav ul{
-        grid-template-rows: 1fr;
-        grid-template-columns: repeat(5, 1fr);
-        place-content: center space-between;
-        align-items: center;
-    }
-
-    nav li:first-child{
-        grid-column-end: 1;
-        z-index: 1;
-    }
-
-    nav img{
-        width: 7em;
-    }
-}
-
-/*Footer*/
+/* || FOOTER*/
 footer{
     grid-area: footer;
     object-fit: contain;
@@ -240,14 +221,13 @@ address{
 }
 
 .credits{
-    grid-area: 1 / 2;
-    text-align: center;
-    padding: 10%;
+    display:none;
 }
 
 .credit-link{
-    display: none;
+    display: inline;        
 }
+
 
 
 
@@ -348,26 +328,21 @@ Grid Layout for Booking Page*/
 .welcome {
     grid-area: content;
     text-align: center;
-    place-self: stretch stretch;
-    background-color: #2D3F4E; 
+    background-color: #2D3F4E; /*fallback background */
     background-image: linear-gradient(#000000, #2D3F4E);
-    color: white;
     padding: 20%;
 }
 
 .welcome-image {
     grid-area: image;
-    place-self: stretch stretch;
 }
 
 
 .location {
     grid-area: content1;
-    place-self: stretch stretch;
     text-align: center;
-    background-color: #2D3F4E;
+    background-color: #2D3F4E; /*fallback background*/
     background-image: linear-gradient(#000000, #2D3F4E);
-    color: white;
     padding: 20%;
 }
 
@@ -381,10 +356,7 @@ Grid Layout for Booking Page*/
 
 .booking {
     grid-area: booking;
-    place-self: stretch stretch;
     text-align: center;
-    font-size: 4vmin;
-    color: white;
     border: 5px solid #9FDBFF;
     background-color: #2D3F4E;
     padding: 10%;
@@ -392,46 +364,48 @@ Grid Layout for Booking Page*/
 }
 
 .booking a {
-    font-size: 4vmin;
+    font-size: 1.5rem;
     color:#9FDBFF
 }
 
 
 
 
-.bookingcontent {
+.booking-content {
     display: grid;
     justify-content: center;
     align-items: stretch;
-    grid-template:
-        [row1-start] "... ... ... ..." 3% [row1-end]
-        [row2-start] "... content image ..."[row2-end]
-        [row3-start] "... image1 content1 ..."[row3-end]
-        [row4-start] "... booking booking ..."[row4-end] 
-        [row5-start] "footer footer footer footer"[row5-end]
-            / 5% 40% 50% 5%;
+    grid-template-areas:
+    "... ... ..."
+    "... content ..."
+    "... image ..." 
+    "... content1 ..."
+    "... image1 ..." 
+    "... booking ..."
+    "footer footer footer";
     gap: 40px 0px;
 }
 
+
 /* || CAFE
 Grid Layout for Cafe Page*/
-.headercafe {
+.header-cafe {
     grid-area: header;
     background-color: #000000;
 }
 
 .banner {
-    grid-area: banner;
+    grid-area: banner; /*Smooth black transition from header to nav*/
     background-color: black;
     align-items: start;
 }
 
-.welcomecafe {
+.welcome-cafe {
     grid-area: cafewelcome;
     padding: 20%;
     text-shadow: 2px 2px #2D3F4E;
     place-self: center stretch;
-    background-color: #2D3F4E;
+    background-color: #2D3F4E; /*fallback background */
     background-image: linear-gradient(black,#2D3F4E);
     /*background-image: url("Images/CafePromo/Restaurant.jpg");
     background-size: cover;
@@ -439,7 +413,7 @@ Grid Layout for Cafe Page*/
 
 }
 
-.defaultMenu {
+.default-menu {
     z-index: 4;
     border: 5px solid #9FDBFF;
     background-color: #2D3F4E;
@@ -459,7 +433,7 @@ Grid Layout for Cafe Page*/
 }
 
 .bubble h2 {
-    font-size: 9vmin;
+    font-size: 4em;
     text-shadow: 2px 2px #000000;
     background-color: #2d3f4eac;
     background-image: linear-gradient(rgba(0, 0, 0, 0.666),#2d3f4eaf,rgba(0, 0, 0, 0.666));
@@ -475,7 +449,7 @@ Grid Layout for Cafe Page*/
 
 
 
-.breakfastmenu {
+.breakfast-menu {
     grid-area: bmenu;
 }
 
@@ -486,7 +460,7 @@ Grid Layout for Cafe Page*/
 }
 
 
-.lunchmenu {
+.lunch-menu {
     grid-area: lmenu;
 
 }
@@ -497,7 +471,7 @@ Grid Layout for Cafe Page*/
 }
 
 
-.dinnermenu {
+.dinner-menu {
     grid-area: dmenu;
 
 }
@@ -508,13 +482,13 @@ Grid Layout for Cafe Page*/
 }
 
 
-.dessertmenu {
+.dessert-menu {
     grid-area: dsmenu;
 
 }
 
 
-.cafecontentheader {
+.cafe-content_header {
     display: grid;
     overflow-x: hidden;
     grid-template:
@@ -523,21 +497,23 @@ Grid Layout for Cafe Page*/
          /auto auto auto auto;
 }
 
-.cafecontent {
+.cafe-content {
     display: grid;
     overflow-x: hidden;
     row-gap: 100px;
     background-image: url("Images/CafePromo/Vegetabletop.jpg");
-    grid-template:
-        [row1-start] "... ... ... ..."[row1-end]
-        [row2-start] "cafewelcome cafewelcome cafewelcome cafewelcome" 400px [row2-end]
-        [row3-start] "breakfast bmenu bmenu bmenu" 800px [row3-end] 
-        [row4-start] "lmenu lmenu lmenu lunch" 800px[row4-end]
-        [row5-start] "dinner dmenu dmenu dmenu" 800px[row5-end]
-        [row6-start] "dsmenu dsmenu dsmenu dessert" 800px[row6-end]
-        [row7-start] "footer footer footer footer" [row7-end]
-        /300px auto auto 300px;
-    
+    grid-template-areas:
+    "... ... ..."
+    "cafewelcome cafewelcome cafewelcome"
+    "breakfast breakfast breakfast"
+    "bmenu bmenu bmenu"
+    "lunch lunch lunch"
+    "lmenu lmenu  lmenu"
+    "dinner dinner dinner"
+    "dmenu dmenu dmenu"
+    "dessert dessert dessert"
+    "dsmenu dsmenu dsmenu"
+    "footer footer footer";
 }
 
 /*Topical*/
@@ -613,8 +589,59 @@ https://pixabay.com/images/id-6688901/
     filter: invert(100)
 }
 
+/* || Media Query for desktop*/
+@media screen and (min-width: 600px){
 
+    nav ul{
+        grid-template-rows: 1fr;
+        grid-template-columns: 7em repeat(4, 1fr);
+    }
+    
+    nav li:first-child{
+        grid-column-end: 1;
+        z-index: 1;
+    }
 
+    nav img {
+        width: 7em;
+    }
+
+    .credits{ 
+        display: block; /*Footer shows sources*/
+        grid-area: 1 / 2;
+        text-align: center;
+        padding: 10%;
+    }
+
+    .credit-link{ 
+        display: none; /*Footer hides link to sources*/
+    }
+
+    .booking-content{
+        grid-template:
+        [row1-start] "... ... ... ..." 3% [row1-end]
+        [row2-start] "... content image ..."[row2-end]
+        [row3-start] "... image1 content1 ..."[row3-end]
+        [row4-start] "... booking booking ..."[row4-end] 
+        [row5-start] "footer footer footer footer"[row5-end]
+        / 5% 40% 50% 5%;
+        
+    }
+
+    .cafe-content{
+        grid-template:
+        [row1-start] "... ... ... ..."[row1-end]
+        [row2-start] "cafewelcome cafewelcome cafewelcome ..." 400px [row2-end]
+        [row3-start] "breakfast bmenu bmenu bmenu" 800px [row3-end] 
+        [row4-start] "lmenu lmenu lmenu lunch" 800px[row4-end]
+        [row5-start] "dinner dmenu dmenu dmenu" 800px[row5-end]
+        [row6-start] "dsmenu dsmenu dsmenu dessert" 800px[row6-end]
+        [row7-start] "footer footer footer footer" [row7-end]
+        /300px auto auto 300px;
+    }
+
+    
+}
 
 
 
@@ -631,15 +658,31 @@ https://pixabay.com/images/id-6688901/
 /*Media Query for Phone*/
 @media screen and (max-width: 700px) {
 
-   
+    /*Index*/
+    .intro p {
+        grid-column: 1/4;
+    }
+
+
+    .button {
+        grid-row: 3/5;
+    }
+
+
+    /*Topical*/
+    .allPictures {
+        height: 70vw;
+    } 
+
+}
+
+/* Old Media Query junk
 
     .credits {
-        display: none; /*footer hides credits*/
+        display: none; /*footer hides credits
     }
 
-    .credit-link{
-        display: inline;        
-    }
+    
 
     .bookingcontent {
         grid-template:
@@ -665,22 +708,4 @@ https://pixabay.com/images/id-6688901/
             "dessert dessert dessert"
             "dsmenu dsmenu dsmenu"
             "footer footer footer"
-    }
-
-    /*Index*/
-    .intro p {
-        grid-column: 1/4;
-    }
-
-
-    .button {
-        grid-row: 3/5;
-    }
-
-
-    /*Topical*/
-    .allPictures {
-        height: 70vw;
-    }
-
-}
+    }*/
