@@ -1,8 +1,9 @@
 # Exam-Web
+***
 ##Content
-1. [Students]
-2. [Code]
-3. [Credits]
+1. [Students](#students)
+2. [Code](#code)
+3. [Credits](#credits)
 ***
 ###Students
 *Julian Skog Krabbe, s360830
