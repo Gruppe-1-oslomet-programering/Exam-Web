@@ -16,27 +16,27 @@ We have styled some elements inside classes, so all of us in the group can let o
 ***
 ### Credits
 ####Own design
-*Logo by Nadia B and Malin B
-*Slogan by Nadia B
+* Logo by Nadia B and Malin B
+* Slogan by Nadia B
 ***
 #### Index
-"Fire" - Image from videezy.com
+* "Fire" - Image from videezy.com
 #### Booking page
-*"Ålesund"- Image by Michelle Raponi from Pixabay
-*"Fjord"- Image by Andrzej from Pixabay
-*"Fjord view"- Image by Photo Mix from Pixabay
-*"Hotel Room1"- Image by Manuela Jaeger from Pixabay
-*"Hotel Room2"- Image by Olya Adamovich from Pixabay
+* "Ålesund"- Image by Michelle Raponi from Pixabay
+* "Fjord"- Image by Andrzej from Pixabay
+* "Fjord view"- Image by Photo Mix from Pixabay
+* "Hotel Room1"- Image by Manuela Jaeger from Pixabay
+* "Hotel Room2"- Image by Olya Adamovich from Pixabay
 ***
 #### Cafe page
-*"Red Wine glasses"- Image by Steve Buissinne from Pixabay
-*"Table Setting Table"- Image by Nenad Maric from Pixabay
-*"Croissants jam breakfast"- Image by Jan Vašek from Pixabay
-*"Place Setting Dinner"- Image by Terri Cnudde from Pixabay
-*"Salad Healthy Dish"- Image by Дарья Яковлева from Pixabay
-*"Curry Food Dish"- Image by Joanna Wielgosz from Pixabay
-*"Dessert"- Image by S. Hermann / F. Richter
+* "Red Wine glasses"- Image by Steve Buissinne from Pixabay
+* "Table Setting Table"- Image by Nenad Maric from Pixabay
+* "Croissants jam breakfast"- Image by Jan Vašek from Pixabay
+* "Place Setting Dinner"- Image by Terri Cnudde from Pixabay
+* "Salad Healthy Dish"- Image by Дарья Яковлева from Pixabay
+* "Curry Food Dish"- Image by Joanna Wielgosz from Pixabay
+* "Dessert"- Image by S. Hermann / F. Richter
 ***
 #### Opinion page
-*"Wine" - Image by Oleksandr Pidvalnyi from Pixabay
+* "Wine" - Image by Oleksandr Pidvalnyi from Pixabay
 ***
