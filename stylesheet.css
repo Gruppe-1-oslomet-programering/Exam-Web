@@ -489,12 +489,19 @@ Grid Layout for Cafe Page*/
 }
 
 #picture-1 {
-    filter: sepia(100%);
-
+    filter: sepia(100%)
 }
 
 #picture-2 {
     filter: invert(100%)
+}
+
+#picture-3 {
+    filter:grayscale(100%)
+}
+
+#picture-4 {
+    filter: saturate(400%);
 }
 
 
