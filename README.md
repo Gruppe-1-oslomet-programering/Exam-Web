@@ -15,10 +15,9 @@ We have coded mobile first in mind, with some adjusting to fit content in big sc
 We have styled some elements inside classes, so all of us in the group can let out our creativity while in the same time working together on keeping the visual profile on every page.
 ***
 ### Credits
-####Own design
+#### Own design
 * Logo by Nadia B and Malin B
 * Slogan by Nadia B
-***
 #### Index
 * "Fire" - Image from videezy.com
 #### Booking page
@@ -27,7 +26,6 @@ We have styled some elements inside classes, so all of us in the group can let o
 * "Fjord view"- Image by Photo Mix from Pixabay
 * "Hotel Room1"- Image by Manuela Jaeger from Pixabay
 * "Hotel Room2"- Image by Olya Adamovich from Pixabay
-***
 #### Cafe page
 * "Red Wine glasses"- Image by Steve Buissinne from Pixabay
 * "Table Setting Table"- Image by Nenad Maric from Pixabay
@@ -36,7 +34,6 @@ We have styled some elements inside classes, so all of us in the group can let o
 * "Salad Healthy Dish"- Image by Дарья Яковлева from Pixabay
 * "Curry Food Dish"- Image by Joanna Wielgosz from Pixabay
 * "Dessert"- Image by S. Hermann / F. Richter
-***
 #### Opinion page
 * "Wine" - Image by Oleksandr Pidvalnyi from Pixabay
 ***
