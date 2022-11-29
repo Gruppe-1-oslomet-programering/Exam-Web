@@ -512,18 +512,12 @@ Grid Layout for Cafe Page*/
 
 /*Credit page*/
 main {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 600px 1fr;
-    background-image: linear-gradient(black, #2D3F4E, black);
+    display: flex;
+    background-image: linear-gradient(black, #2D3F4E, black); 
+    flex-flow: column wrap;
 }
 
-main ul:first-child {
-    border: 5px double #9FDBFF;
- }
-
 main ul {
-    grid-area: 1/2;
     border-radius: 30px;
     padding: 20px;
     margin: 30px;
