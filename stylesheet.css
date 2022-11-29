@@ -148,7 +148,6 @@ address {
 }
 
 .credit-link {
-    display: inline;
     grid-area: 2 / 1;
     padding-left: 10%;
 }
@@ -567,7 +566,8 @@ main ul {
     }
 
     .credit-link {
-        display: none; /*Footer hides link to sources*/
+        display: none;
+       
     }
 
     .booking-content {
