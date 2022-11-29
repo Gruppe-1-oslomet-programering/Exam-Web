@@ -1,16 +1,16 @@
 # Exam-Web
 ***
 ##Content
-1. [Students](#students)
-2. [Code](#code)
-3. [Credits](#credits)
+1. [Students]
+2. [Code]
+3. [Credits]
 ***
 ###Students
 *Julian Skog Krabbe, s360830
 *Nadia Bounasser, s360819
 *Malin Sofia Louise Bjuvsjö, s360774
 ***
-###Code
+###Code(#code)
 We have coded mobile first in mind, with some adjusting to fit content in big screens.
 We have styled some elements inside classes, so all of us in the group can let out our creativity while in the same time working together on keeping the visual profile on every page.
 ***
