@@ -3,6 +3,7 @@
 1. [Students]
 2. [Code]
 3. [Credits]
+***
 ###Students
 *Julian Skog Krabbe, s360830
 *Nadia Bounasser, s360819
