@@ -6,9 +6,9 @@
 3. Credits
 ***
 ### Students
-*Julian Skog Krabbe, s360830
-*Nadia Bounasser, s360819
-*Malin Sofia Louise Bjuvsjö, s360774
+* Julian Skog Krabbe, s360830
+* Nadia Bounasser, s360819
+* Malin Sofia Louise Bjuvsjö, s360774
 ***
 ### Code
 We have coded mobile first in mind, with some adjusting to fit content in big screens.
