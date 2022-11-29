@@ -486,7 +486,7 @@ Grid Layout for Cafe Page*/
 
 .main .button {
     display: flex;
-    justify-content: end;
+    justify-content:center;
 }
 
 
