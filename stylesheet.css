@@ -284,10 +284,13 @@ Grid Layout for Booking Page*/
     padding: 10%;
 
 }
+.booking h2{
+    font-size: 1.5rem;
+}
 
 .booking a {
-    font-size: 1.5rem;
-    color: #9FDBFF
+    font-size: 0.9rem;
+    color: #9FDBFF;
 }
 
 
@@ -507,30 +510,6 @@ Grid Layout for Cafe Page*/
     filter: invert(100%)
 }
 
-
-/*Credit page*/
-main {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 600px 1fr;
-    background-image: linear-gradient(black, #2D3F4E, black);
-}
-
-main ul:first-child {
-    border: 5px double #9FDBFF;
- }
-
-main ul {
-    grid-area: 1/2;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 30px;
-    line-height: 1.5em;
-    color: white;
-    font-size: 1.1em;
-}
-
-
 /* || Media Query for desktop*/
 @media screen and (min-width: 700px) {
 
@@ -585,6 +564,14 @@ main ul {
             [row5-start] "footer footer footer footer"[row5-end] 
             / 5% 40% 50% 5%;
 
+    }
+
+    .booking h2{
+        font-size: 2rem;
+    }
+
+    .booking a{
+        font-size: 1.9rem;
     }
 
     .cafe-content {
