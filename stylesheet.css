@@ -507,6 +507,30 @@ Grid Layout for Cafe Page*/
     filter: invert(100%)
 }
 
+
+/*Credit page*/
+main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 600px 1fr;
+    background-image: linear-gradient(black, #2D3F4E, black);
+}
+
+main ul:first-child {
+    border: 5px double #9FDBFF;
+ }
+
+main ul {
+    grid-area: 1/2;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 30px;
+    line-height: 1.5em;
+    color: white;
+    font-size: 1.1em;
+}
+
+
 /* || Media Query for desktop*/
 @media screen and (min-width: 700px) {
 
