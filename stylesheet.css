@@ -283,10 +283,13 @@ Grid Layout for Booking Page*/
     padding: 10%;
 
 }
+.booking h2{
+    font-size: 1.5rem;
+}
 
 .booking a {
-    font-size: 1.5rem;
-    color: #9FDBFF
+    font-size: 0.9rem;
+    color: #9FDBFF;
 }
 
 
@@ -579,6 +582,14 @@ main ul {
             [row5-start] "footer footer footer footer"[row5-end] 
             / 5% 40% 50% 5%;
 
+    }
+
+    .booking h2{
+        font-size: 2rem;
+    }
+
+    .booking a{
+        font-size: 1.9rem;
     }
 
     .cafe-content {
