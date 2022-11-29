@@ -192,6 +192,7 @@ nav li{
 nav li:first-child{
     border: none;
     grid-area: 1 / 1 / 5 / 4 ;
+    justify-self: start;
     z-index: 1;
 }
 
@@ -490,7 +491,9 @@ Grid Layout for Cafe Page*/
     display: grid;
     overflow-x: hidden;
     grid-template:
-        [row1-start] "header header header header"[row1-end] [row2-start] "banner banner banner banner" 5px [row2-end] /auto auto auto auto;
+        [row1-start] "header header header header"[row1-end]
+         [row2-start] "banner banner banner banner" 5px [row2-end]
+          /auto auto auto auto;
 }
 
 .cafe-content {
