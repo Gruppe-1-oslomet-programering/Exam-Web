@@ -23,8 +23,7 @@ The sources can also be reached on the site from a link in the footer.
 * "Fire" - Image from videezy.com
 * "Wedding reception" - Image by Pexels from Pixabay
 * "Couple" - Image by OlcayErtem from Pixabay
-* "Wedding" - Image by StockSnap from Pixabay
-* "Wedding 2" - Image by Pexels from Pixabay
+* "Wedding" - Image by Pexels from Pixabay
 * "Drinks" - Image by Pexels from ' Pixabay
 #### Booking page
 * "Ålesund"- Image by Michelle Raponi from Pixabay
