@@ -12,7 +12,7 @@
 ***
 ### Code
 We have coded mobile first in mind, with some adjusting to fit content in big screens.
-We have styled some elements inside classes, so all of us in the group can let out our creativity while in the same time working together on keeping the visual profile on every page.
+We have styled some elements inside classes, while keeping the visual profile overall the website.
 ***
 ### Credits
 The sources can also be reached on the site from a link in the footer.
@@ -21,6 +21,11 @@ The sources can also be reached on the site from a link in the footer.
 * Slogan by Nadia B
 #### Index
 * "Fire" - Image from videezy.com
+* "Wedding reception" - Image by Pexels from Pixabay
+* "Couple" - Image by OlcayErtem from Pixabay
+* "Wedding" - Image by StockSnap from Pixabay
+* "Wedding 2" - Image by Pexels from Pixabay
+* "Drinks" - Image by Pexels from ' Pixabay
 #### Booking page
 * "Ålesund"- Image by Michelle Raponi from Pixabay
 * "Fjord"- Image by Andrzej from Pixabay
