@@ -12,7 +12,7 @@
 ***
 ### Code
 We have coded mobile first in mind, with some adjusting to fit content in big screens.
-We have styled some elements inside classes, while keeping the visual profile overall the website.
+We have styled some elements inside classes, while keeping the visual profile overall on the website.
 ***
 ### Credits
 The sources can also be reached on the site from a link in the footer.
