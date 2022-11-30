@@ -15,6 +15,7 @@ We have coded mobile first in mind, with some adjusting to fit content in big sc
 We have styled some elements inside classes, so all of us in the group can let out our creativity while in the same time working together on keeping the visual profile on every page.
 ***
 ### Credits
+The sources can also be reached on the site from a link in the footer.
 #### Own design
 * Logo by Nadia B and Malin B
 * Slogan by Nadia B

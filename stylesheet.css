@@ -65,28 +65,6 @@ img {
     height: 100%;
 }
 
-.button {
-    grid-row: 3/5;
-    grid-column: 2;
-    z-index: 1;
-    align-self: center;
-    white-space: nowrap;
-}
-
-.button a {
-    font-family: 'Garamond', Tahoma, serif;
-    border: 5px solid #9FDBFF;
-    background-color: black;
-    text-align: center;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 20px;
-}
-
-.button a:hover {
-    background-color: #2D3F4E;
-}
-
 /* || NAV- Navigation Bar*/
 nav {
     position: sticky;
@@ -152,9 +130,6 @@ address {
 }
 
 
-
-
-
 /*Slideshow Gallery*/
 .promoGallery {
     display: none;
@@ -194,6 +169,8 @@ address {
     height: auto;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .slogan {
@@ -214,8 +191,10 @@ address {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     background-image: linear-gradient(#000000, #2D3F4E);
-    gap: 10px 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
 
 .intro img {
     grid-area: 2/2;
@@ -239,8 +218,23 @@ address {
     padding: 5px;
 }
 
+.button {
+   display: none;
+}
 
+.button a {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #9FDBFF;
+    background-color: #2D3F4E;;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
 
+.button a:hover {
+    border-width: 7px;
+}
 
 
 /* || BOOKING
@@ -473,11 +467,10 @@ Grid Layout for Cafe Page*/
     text-decoration: none;
 }
 
-.main .button {
-    display: flex;
-    justify-content:center;
+.toplink{
+    place-content: end;
+    text-align: end;
 }
-
 
 .wine-picture {
     background-image: url("Images/wine.jpg");
@@ -605,7 +598,12 @@ main ul {
 
 
     .button {
-        grid-row: 3;
+        display: block;
+        grid-row: 2/5;
+        grid-column: 2;
+        z-index: 1;
+        align-self: center;
+        white-space: nowrap;
     }
 
 
