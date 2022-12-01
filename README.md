@@ -6,16 +6,16 @@
 3. Credits
 ***
 ### Students
+Insperia group 3425
 * Julian Skog Krabbe, s360830
 * Nadia Bounasser, s360819
 * Malin Sofia Louise Bjuvsjö, s360774
-***
 ### Code
 We have coded mobile first in mind, with some adjusting to fit content in big screens.
 We have styled some elements inside classes, while keeping the visual profile overall on the website.
 ***
 ### Credits
-The sources can also be reached on the site from a link in the footer.
+The sources are also linked in the footer.
 #### Own design
 * Logo by Nadia B and Malin B
 * Slogan by Nadia B
@@ -24,7 +24,7 @@ The sources can also be reached on the site from a link in the footer.
 * "Wedding reception" - Image by Pexels from Pixabay
 * "Couple" - Image by OlcayErtem from Pixabay
 * "Wedding" - Image by Pexels from Pixabay
-* "Drinks" - Image by Pexels from ' Pixabay
+* "Drinks" - Image by Pexels from Pixabay
 #### Booking page
 * "Ålesund"- Image by Michelle Raponi from Pixabay
 * "Fjord"- Image by Andrzej from Pixabay

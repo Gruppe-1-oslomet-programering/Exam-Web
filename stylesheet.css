@@ -1,5 +1,4 @@
 /* || SITEWIDE */
-
 * {
     padding: 0;
     margin: 0;
@@ -65,6 +64,7 @@ img {
     height: 100%;
 }
 
+
 /* || NAV- Navigation Bar*/
 nav {
     position: sticky;
@@ -103,6 +103,7 @@ nav img {
     width: 9em;
     height: fit-content;
 }
+
 
 /* || FOOTER*/
 footer {
@@ -160,6 +161,7 @@ address {
         opacity: 1
     }
 }
+
 
 /* || INDEX*/
 .index-background {
@@ -240,6 +242,7 @@ address {
     display: flex;
 }
 
+
 /* || BOOKING
 Grid Layout for Booking Page*/
 .welcome {
@@ -253,7 +256,6 @@ Grid Layout for Booking Page*/
 .welcome-image {
     grid-area: image;
 }
-
 
 .location {
     grid-area: content1;
@@ -279,6 +281,7 @@ Grid Layout for Booking Page*/
     padding: 10%;
 
 }
+
 .booking h2{
     font-size: 1.5rem;
 }
@@ -287,9 +290,6 @@ Grid Layout for Booking Page*/
     font-size: 0.9rem;
     color: #9FDBFF;
 }
-
-
-
 
 .booking-content {
     display: grid;
@@ -327,10 +327,6 @@ Grid Layout for Cafe Page*/
     place-self: center stretch;
     background-color: #2D3F4E; /*fallback background */
     background-image: linear-gradient(black, #2D3F4E);
-    /*background-image: url("Images/CafePromo/Restaurant.jpg");
-    background-size: cover;
-    border: 4px solid #2D3F4E;*/
-
 }
 
 .default-menu {
@@ -367,18 +363,14 @@ Grid Layout for Cafe Page*/
     background-image: url("Images/CafePromo/Breakfast.jpg");
 }
 
-
-
 .breakfast-menu {
     grid-area: bmenu;
 }
-
 
 .lunch {
     grid-area: lunch;
     background-image: url("Images/CafePromo/Lunch.jpg");
 }
-
 
 .lunch-menu {
     grid-area: lmenu;
@@ -390,7 +382,6 @@ Grid Layout for Cafe Page*/
     background-image: url("Images/CafePromo/Dinner.jpg");
 }
 
-
 .dinner-menu {
     grid-area: dmenu;
 
@@ -401,12 +392,18 @@ Grid Layout for Cafe Page*/
     background-image: url("Images/CafePromo/Dessert.jpg");
 }
 
-
 .dessert-menu {
     grid-area: dsmenu;
 
 }
 
+.hours{
+    grid-area: header;
+    align-self: end;
+    font-size: x-large;
+    justify-self: center;
+    padding-bottom: 15px;
+}
 
 .cafe-content_header {
     display: grid;
@@ -436,7 +433,8 @@ Grid Layout for Cafe Page*/
         "footer footer footer";
 }
 
-/*Topical*/
+
+/* || TOPICAL*/
 .main {
     overflow-x: hidden;
 }
@@ -452,8 +450,6 @@ Grid Layout for Cafe Page*/
 .main h2 {
     color: wheat;
     text-align: center;
-    
-
 }
 
 .main h3 {
@@ -594,11 +590,11 @@ main ul {
             /300px auto auto 300px;
     }
 
+
     /*Index*/
     .intro p {
         grid-column: 2/3;
     }
-
 
     .button {
         display: block;
