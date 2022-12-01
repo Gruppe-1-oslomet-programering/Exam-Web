@@ -237,7 +237,7 @@ address {
 }
 
 .index-images{
-    border: 10px double white;
+    border: 5px double white;
     background-color: #2D3F4E;
     display: flex;
 }
