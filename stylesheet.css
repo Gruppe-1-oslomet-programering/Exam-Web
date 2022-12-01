@@ -430,6 +430,22 @@ Grid Layout for Cafe Page*/
         "footer footer footer";
 }
 
+/* || ACCESSIBILITY*/
+
+section img{
+    border: 3px double white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.access h1{
+    padding: 20px;
+}
+
+.access h2{
+    padding: 10px;
+}
+
 
 /* || TOPICAL*/
 .main {
