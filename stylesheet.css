@@ -402,7 +402,6 @@ Grid Layout for Cafe Page*/
     align-self: end;
     font-size: x-large;
     justify-self: center;
-    padding-bottom: 15px;
 }
 
 .cafe-content_header {
@@ -590,6 +589,9 @@ main ul {
             /300px auto auto 300px;
     }
 
+    .hours{
+        padding-bottom: 20px;
+    }
 
     /*Index*/
     .intro p {
