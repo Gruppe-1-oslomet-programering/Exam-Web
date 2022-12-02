@@ -450,6 +450,7 @@ Grid Layout for Cafe Page*/
     display: grid;
     overflow-x: hidden;
     row-gap: 100px;
+    background-color: rgb(68, 41, 41); /*fallback background*/
     background-image: url("Images/CafePromo/Vegetabletop.jpg");/*Credit listed as: "Salad Healthy Dish"*/
     /*Source of image:https://pixabay.com/photos/salad-healthy-dish-nutrition-2068217/*/
     grid-template-areas:
