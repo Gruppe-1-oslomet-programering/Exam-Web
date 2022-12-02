@@ -14,6 +14,7 @@ ul {
 
 li{
     color: white;
+    font-size: 1.5rem;
 }
 
 
@@ -79,7 +80,6 @@ nav {
     z-index: 10;
     background-color: black;
     font-family: 'Garamond', Tahoma, serif;
-    font-size: 1.5em;
 }
 
 nav a{
@@ -115,7 +115,6 @@ nav li:hover{
 
 nav img {
     padding: 4%;
-    width: 250px; /*Fallback*/
     width: 9em;
     height: auto;
 }
@@ -139,6 +138,10 @@ address {
 
 .credits {
     display: none;
+}
+
+.credits li{
+    font-size: 0.9rem;
 }
 
 .credit-link {
@@ -290,8 +293,8 @@ Grid Layout for Booking Page*/
     font-size: 2.5rem;
 }
 
-.booking h2{
-    font-size: 1.5rem;
+.booking-content h2{
+    font-size: 2rem;
 }
 
 .booking a {
