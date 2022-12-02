@@ -148,6 +148,11 @@ address {
     padding-left: 10%;
 }
 
+.credit-link a{
+    color:#54baf9;
+    text-decoration: underline;
+}
+
 
 /*Slideshow Gallery*/
 .promoGallery {
@@ -603,6 +608,10 @@ main ul {
         grid-area: 1 / 2;
         text-align: center;
         padding: 10%;
+    }
+
+    .credits a {
+        color:#54baf9;
     }
 
     .credit-link {
