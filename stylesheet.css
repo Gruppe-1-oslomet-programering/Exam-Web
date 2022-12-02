@@ -489,7 +489,6 @@ Grid Layout for Cafe Page*/
     padding-left: 10vw;
     padding-right: 10vw;
     background-image: linear-gradient(black, #2D3F4E, black);
-    font-size: larger;
 }
 
 .main h2 {
@@ -523,7 +522,7 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: cover;*/
+    background-size: cover;
     object-fit: contain;
     background-color: #000000;
 }
