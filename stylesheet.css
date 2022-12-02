@@ -84,7 +84,6 @@ nav {
 
 nav a{
     display: block;
-    color: yellow;                              /*test*/
 }
 
 nav ul {
@@ -524,11 +523,11 @@ Grid Layout for Cafe Page*/
     background-image: url("Images/Topical/wine.jpg");
     height: 40vh;
     width: 100vw;
-    background-attachment: scroll; /*Fallback for devices not supporting background attachment: fixed*/
-    background-attachment: fixed;
+    background-attachment: fixed; /*Not supportet by iOS*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     background-color: #000000;
     display: block;
 }
