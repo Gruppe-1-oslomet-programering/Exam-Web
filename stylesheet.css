@@ -84,7 +84,7 @@ nav {
 
 nav a{
     display: block;
-    color: green;                                                         /*test*/
+    color: pink;                                                         /*test*/
 }
 
 nav ul {
@@ -522,9 +522,7 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    /**/
-    z-index: -1;
-    /*object-fit: cover;*/
+    background-size: contain;
     background-color: #000000;
 }
 
