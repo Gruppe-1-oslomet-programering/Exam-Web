@@ -605,14 +605,15 @@ main ul {
         font-size: 1.9rem;
     }
 
+    /*Idea for design is small pamphlets on a table*/
     .cafe-content {
         grid-template:
             [row1-start] "... ... ... ..."[row1-end] 
             [row2-start] ". cafewelcome cafewelcome ." [row2-end] 
-            [row3-start] "breakfast bmenu bmenu bmenu" 800px [row3-end] 
-            [row4-start] "lmenu lmenu lmenu lunch" 800px[row4-end] 
-            [row5-start] "dinner dmenu dmenu dmenu" 800px[row5-end] 
-            [row6-start] "dsmenu dsmenu dsmenu dessert" 800px[row6-end] 
+            [row3-start] "breakfast bmenu bmenu bmenu"  [row3-end] 
+            [row4-start] "lmenu lmenu lmenu lunch" [row4-end] 
+            [row5-start] "dinner dmenu dmenu dmenu" [row5-end] 
+            [row6-start] "dsmenu dsmenu dsmenu dessert" [row6-end] 
             [row7-start] "footer footer footer footer"[row7-end] 
             /30% auto auto 30%;
     }
