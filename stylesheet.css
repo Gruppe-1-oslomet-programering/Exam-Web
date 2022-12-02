@@ -84,7 +84,7 @@ nav {
 
 nav a{
     display: block;
-    color: pink;/*test*/
+    color: red;/*test*/
 }
 
 nav ul {
@@ -522,8 +522,9 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    /*background-size: cover;*/
     object-fit: contain;
+    background-color: #000000;
 }
 
 #picture-1 {
@@ -682,7 +683,7 @@ main ul {
 
     /*Topical*/
     .wine-picture {
-        height: 30vw;
+        height: 40vw;
     }
 
 }
