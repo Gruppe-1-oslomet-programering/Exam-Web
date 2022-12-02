@@ -84,6 +84,7 @@ nav {
 
 nav a{
     display: block;
+    color: green;                                                         /*test*/
 }
 
 nav ul {
@@ -115,6 +116,7 @@ nav li:hover{
 nav img {
     padding: 4%;
     width: 9em;
+    height: auto;
 }
 
 
@@ -522,8 +524,9 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    object-fit: contain;
+    /**/
+    z-index: -1;
+    /*object-fit: cover;*/
     background-color: #000000;
 }
 
@@ -564,7 +567,7 @@ main ul {
 
     nav ul {
         grid-template-rows: max-content;
-        grid-template-columns: 165px repeat(4, 1fr);
+        grid-template-columns: 7em repeat(4, 1fr);
     }
 
     nav li:first-child{
@@ -581,6 +584,7 @@ main ul {
     nav li{
         text-align: center;
         place-self: center stretch;
+        padding: 0px;
         border-right: 1px solid white;
         border-bottom: none;
         white-space: nowrap;
@@ -594,7 +598,7 @@ main ul {
     }
  
     nav img {
-        width: 165px;
+        width: 7em;
     }
 
     .credits {
