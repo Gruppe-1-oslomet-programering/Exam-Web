@@ -80,6 +80,10 @@ nav {
     font-size: 1.5em;
 }
 
+nav a{
+    display: block;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
