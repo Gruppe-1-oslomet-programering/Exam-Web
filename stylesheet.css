@@ -389,7 +389,7 @@ Grid Layout for Cafe Page*/
 .breakfast {
     grid-area: breakfast;
     background-color: #9FDBFF; /*Fall-back background*/
-    background-image: url("Images/CafePromo/Breakfast.jpg");
+    background-image: url("Images/CafePromo/Breakfast.jpg");/*Credit listed as: "Croissants jam breakfast"*/
     /*Source of image: https://pixabay.com/photos/croissants-jam-breakfast-knife-569075/*/
 }
 
@@ -400,7 +400,7 @@ Grid Layout for Cafe Page*/
 .lunch {
     grid-area: lunch;
     background-color: #9FDBFF; /*Fall-back background*/
-    background-image: url("Images/CafePromo/Lunch.jpg");
+    background-image: url("Images/CafePromo/Lunch.jpg");/*Credit listed as: "Place Setting Dinner"*/
     /*Source of image: https://pixabay.com/photos/place-setting-dinner-table-setting-2110245/*/
 }
 
@@ -412,7 +412,7 @@ Grid Layout for Cafe Page*/
 .dinner {
     grid-area: dinner;
     background-color: #9FDBFF; /*Fall-back background*/
-    background-image: url("Images/CafePromo/Dinner.jpg");
+    background-image: url("Images/CafePromo/Dinner.jpg");/*Credit listed as: "Curry Food Dish"*/
     /*Source of image: https://pixabay.com/photos/curry-food-dish-meal-cuisine-7249247/*/
 }
 
@@ -424,7 +424,7 @@ Grid Layout for Cafe Page*/
 .dessert {
     grid-area: dessert;
     background-color: #9FDBFF; /*Fall-back background*/
-    background-image: url("Images/CafePromo/Dessert.jpg");
+    background-image: url("Images/CafePromo/Dessert.jpg"); /*Credit listed as: "Dessert"*/
     /*Source of image: https://pixabay.com/photos/chocolates-chocolate-confiserie-1737503/*/
 }
 
@@ -450,7 +450,8 @@ Grid Layout for Cafe Page*/
     display: grid;
     overflow-x: hidden;
     row-gap: 100px;
-    background-image: url("Images/CafePromo/Vegetabletop.jpg");
+    background-image: url("Images/CafePromo/Vegetabletop.jpg");/*Credit listed as: "Salad Healthy Dish"*/
+    /*Source of image:https://pixabay.com/photos/salad-healthy-dish-nutrition-2068217/*/
     grid-template-areas:
         "... ... ..."
         "cafewelcome cafewelcome cafewelcome"
