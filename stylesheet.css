@@ -569,7 +569,7 @@ main ul {
 
     /*||NAV navigation bar*/
     nav ul {
-        grid-template-rows: max-content;
+        grid-template-rows: 1fr;
         grid-template-columns: 165px repeat(4, 1fr);
     }
 
@@ -590,8 +590,6 @@ main ul {
         padding: 0px;
         border-right: 1px solid white;
         border-bottom: none;
-        white-space: nowrap;
-        overflow:hidden;
     }
 
     
