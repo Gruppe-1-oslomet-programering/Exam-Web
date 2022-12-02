@@ -526,8 +526,9 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: auto;
     background-color: #000000;
+    display: block;
 }
 
 #picture-1 {
@@ -557,7 +558,6 @@ main {
 main ul {
     text-align: center;
     padding: 10px;
-    line-height: 1.5em;
     color: white;
 }
 
