@@ -84,7 +84,6 @@ nav {
 
 nav a{
     display: block;
-    color: green;                                                         /*test*/
 }
 
 nav ul {
@@ -565,7 +564,7 @@ main ul {
 
     nav ul {
         grid-template-rows: max-content;
-        grid-template-columns: 7em repeat(4, 1fr);
+        grid-template-columns: 165px repeat(4, 1fr);
     }
 
     nav li:first-child{
@@ -596,7 +595,7 @@ main ul {
     }
  
     nav img {
-        width: 7em;
+        width: 165px;
     }
 
     .credits {
