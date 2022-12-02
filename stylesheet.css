@@ -68,7 +68,6 @@ a:hover {
 img {
     width: 100%;
     height: 100%;
-    /*object-fit: cover;*/
 }
 
 
@@ -566,6 +565,7 @@ main ul {
 /* || Media Query for desktop*/
 @media screen and (min-width: 700px) {
 
+    /*||NAV navigation bar*/
     nav ul {
         grid-template-rows: max-content;
         grid-template-columns: 165px repeat(4, 1fr);
@@ -602,6 +602,8 @@ main ul {
         width: 165px;
     }
 
+    /*||FOOTER*/
+
     .credits {
         display: block; /*Footer shows sources*/
         grid-area: 1 / 2;
@@ -617,6 +619,8 @@ main ul {
         display: none;
        
     }
+
+    /*||BOOKING PAGE*/
 
     .booking-content {
         grid-template:
@@ -637,6 +641,8 @@ main ul {
     .booking a{
         font-size: 1.9rem;
     }
+
+    /*||CAFE PAGE*/
 
     /*Idea for design is small pamphlets on a table*/
     .cafe-content {
