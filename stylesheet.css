@@ -37,12 +37,17 @@ h4 {
     color: white;
 }
 
-dt,
+dt {
+    color: wheat; /*Style for dishes on cafe page*/
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
 dd {
     color: white;
     font-size: larger;
-    line-height: 1.5em;
-    
+    line-height: 1.5em; 
+    text-align: center; 
 }
 
 a {
@@ -52,7 +57,6 @@ a {
 
 a:hover {
     color: #9FDBFF;
-    background-color: #000000;
 }
 
 .active {
@@ -95,6 +99,10 @@ nav li:first-child {
     grid-area: 1 / 1 / 5 / 4;
     justify-self: start;
     z-index: 1;
+    background-color: black;
+}
+
+nav li:hover{
     background-color: black;
 }
 
@@ -314,19 +322,27 @@ Grid Layout for Cafe Page*/
     background-color: #000000;
 }
 
-.banner {
-    grid-area: banner; /*Smooth black transition from header to nav*/
-    background-color: black;
-    align-items: start;
-}
-
 .welcome-cafe {
     grid-area: cafewelcome;
-    padding: 20%;
-    text-shadow: 2px 2px #2D3F4E;
+    padding: 10%;
     place-self: center stretch;
     background-color: #2D3F4E; /*fallback background */
     background-image: linear-gradient(black, #2D3F4E);
+    border: 5px double white;
+}
+
+.welcome-cafe h1{
+    font-size: 3rem;
+}
+
+.welcome-cafe a{
+    text-decoration: underline;
+    display: block;
+}
+
+.welcome-cafe img{
+    border: 2px double white;
+    float: right;
 }
 
 .default-menu {
@@ -404,10 +420,9 @@ Grid Layout for Cafe Page*/
 
 .cafe-content_header {
     display: grid;
-    overflow-x: hidden;
+    overflow: hidden;
     grid-template:
         [row1-start] "header header header header"[row1-end]
-        [row2-start] "banner banner banner banner" 5px [row2-end]
         /auto auto auto auto;
 }
 
@@ -593,13 +608,13 @@ main ul {
     .cafe-content {
         grid-template:
             [row1-start] "... ... ... ..."[row1-end] 
-            [row2-start] "cafewelcome cafewelcome cafewelcome ..." 400px [row2-end] 
+            [row2-start] ". cafewelcome cafewelcome ." [row2-end] 
             [row3-start] "breakfast bmenu bmenu bmenu" 800px [row3-end] 
             [row4-start] "lmenu lmenu lmenu lunch" 800px[row4-end] 
             [row5-start] "dinner dmenu dmenu dmenu" 800px[row5-end] 
             [row6-start] "dsmenu dsmenu dsmenu dessert" 800px[row6-end] 
             [row7-start] "footer footer footer footer"[row7-end] 
-            /300px auto auto 300px;
+            /30% auto auto 30%;
     }
 
     .hours{
