@@ -358,6 +358,10 @@ Grid Layout for Cafe Page*/
     place-self: center stretch;
 }
 
+.default-menu h2{
+    font-size: 2rem;
+}
+
 .bubble {
     background-size: cover;
     z-index: 1;
@@ -380,7 +384,9 @@ Grid Layout for Cafe Page*/
 
 .breakfast {
     grid-area: breakfast;
+    background-color: #9FDBFF; /*Fall-back background*/
     background-image: url("Images/CafePromo/Breakfast.jpg");
+    /*Source of image: https://pixabay.com/photos/croissants-jam-breakfast-knife-569075/*/
 }
 
 .breakfast-menu {
@@ -389,7 +395,9 @@ Grid Layout for Cafe Page*/
 
 .lunch {
     grid-area: lunch;
+    background-color: #9FDBFF; /*Fall-back background*/
     background-image: url("Images/CafePromo/Lunch.jpg");
+    /*Source of image: https://pixabay.com/photos/place-setting-dinner-table-setting-2110245/*/
 }
 
 .lunch-menu {
@@ -399,7 +407,9 @@ Grid Layout for Cafe Page*/
 
 .dinner {
     grid-area: dinner;
+    background-color: #9FDBFF; /*Fall-back background*/
     background-image: url("Images/CafePromo/Dinner.jpg");
+    /*Source of image: https://pixabay.com/photos/curry-food-dish-meal-cuisine-7249247/*/
 }
 
 .dinner-menu {
@@ -409,7 +419,9 @@ Grid Layout for Cafe Page*/
 
 .dessert {
     grid-area: dessert;
+    background-color: #9FDBFF; /*Fall-back background*/
     background-image: url("Images/CafePromo/Dessert.jpg");
+    /*Source of image: https://pixabay.com/photos/chocolates-chocolate-confiserie-1737503/*/
 }
 
 .dessert-menu {
