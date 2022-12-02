@@ -117,7 +117,6 @@ nav img {
     padding: 4%;
     width: 9em;
     height: auto;
-    width: fit-content;
 }
 
 
@@ -526,7 +525,7 @@ Grid Layout for Cafe Page*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: cover;*/
+    background-size: cover;
     object-fit: contain;
     background-color: #000000;
 }
