@@ -229,6 +229,7 @@ address {
 
 .intro img {
     grid-area: 2/2;
+    object-fit: contain;
 
 }
 
