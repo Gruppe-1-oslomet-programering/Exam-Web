@@ -523,7 +523,7 @@ Grid Layout for Cafe Page*/
     background-image: url("Images/Topical/wine.jpg");
     height: 40vh;
     width: 100vw;
-    background-attachment: fixed; /*Not supportet by iOS*/
+    background-attachment: fixed; /*Not supported by iOS*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -669,7 +669,7 @@ main ul {
         font-size: x-large;
     }
 
-    /*Index*/
+    /* || Index*/
     .intro p {
         grid-column: 2/3;
     }
@@ -697,7 +697,7 @@ main ul {
         border-width: 7px;
     }
 
-    /*Topical*/
+    /* || Topical*/
     .wine-picture {
         height: 40vw;
     }
