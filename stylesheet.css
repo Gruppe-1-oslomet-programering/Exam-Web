@@ -83,8 +83,7 @@ nav {
 }
 
 nav a{
-    display: block;
-    color: pink;                                                         /*test*/
+    display: block;                                            
 }
 
 nav ul {
@@ -628,6 +627,7 @@ main ul {
             / 5% 40% 50% 5%;
 
     }
+
 
     .booking h2{
         font-size: 2rem;
