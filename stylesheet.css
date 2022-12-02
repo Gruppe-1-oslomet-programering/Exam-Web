@@ -117,6 +117,7 @@ nav img {
     padding: 4%;
     width: 9em;
     height: auto;
+    width: fit-content;
 }
 
 
