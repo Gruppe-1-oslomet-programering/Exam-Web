@@ -107,7 +107,7 @@ nav li:first-child {
 }
 
 nav li:hover{
-    background-color: black;
+    background-color: rgb(27, 27, 27);
 }
 
 nav img {
@@ -549,26 +549,34 @@ main ul {
 @media screen and (min-width: 700px) {
 
     nav ul {
-        grid-template-rows: 1fr;
+        grid-template-rows: max-content;
         grid-template-columns: 7em repeat(4, 1fr);
     }
 
-    nav li:first-child {
+    nav li:first-child{
         grid-column-end: 1;
         z-index: 1;
         padding: 0px;
     }
 
+    nav li:not(:first-child) a{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    
+
     nav li{
         text-align: center;
         place-self: center stretch;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding: 0px;
         border-right: 1px solid white;
         border-bottom: none;
         white-space: nowrap;
         overflow:hidden;
     }
+
+    
 
     nav li .active {
         background-color: #2D3F4E;
